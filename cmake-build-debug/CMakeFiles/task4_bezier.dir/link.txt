@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter  -rdynamic CMakeFiles/task4_bezier.dir/src/task4_bezier/task4_bezier.cpp.o  -o task4_bezier libppgso.a libshaders.a -lglfw -lGLEW -lGL -lGLU 

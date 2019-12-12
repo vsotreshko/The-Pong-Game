@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter  -rdynamic CMakeFiles/raw3_raytrace.dir/src/raw3_raytrace/raw3_raytrace.cpp.o  -o raw3_raytrace libppgso.a -lglfw -lGLEW -lGL -lGLU 

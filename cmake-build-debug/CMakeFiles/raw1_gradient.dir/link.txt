@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter  -rdynamic CMakeFiles/raw1_gradient.dir/src/raw1_gradient/raw1_gradient.cpp.o  -o raw1_gradient libppgso.a -lglfw -lGLEW -lGL -lGLU 

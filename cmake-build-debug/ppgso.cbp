@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ppgso"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThePongGame">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/ThePongGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThePongGame"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThePongGame/fast">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/ThePongGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 ThePongGame/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ppgso">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ppgso/fast">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/libppgso.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLM_FORCE_RADIANS"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game"/>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 ppgso/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shaders">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shaders/fast">
+				<Option output="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/libshaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 shaders/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image_bmp.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image_bmp.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image_raw.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/image_raw.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/mesh.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/mesh.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/shader.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/shader.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/texture.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/texture.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/tiny_obj_loader.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/tiny_obj_loader.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.h">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/FindGLFW3.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/FindGLM.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/add_resources.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

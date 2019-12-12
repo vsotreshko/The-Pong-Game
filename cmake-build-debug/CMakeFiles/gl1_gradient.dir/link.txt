@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter  -rdynamic CMakeFiles/gl1_gradient.dir/src/gl1_gradient/gl1_gradient.cpp.o  -o gl1_gradient libppgso.a libshaders.a -lglfw -lGLEW -lGL -lGLU 

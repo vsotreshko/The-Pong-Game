@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter  -rdynamic CMakeFiles/task3_bresenham.dir/src/task3_bresenham/task3_bresenham.cpp.o  -o task3_bresenham libppgso.a -lglfw -lGLEW -lGL -lGLU 
