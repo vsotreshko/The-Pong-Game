@@ -2,6 +2,13 @@
 // Created by vsotreshko on 8. 12. 2019.
 //
 
+/*!TODO
+ * 1) Отображение счета на сцене при создании Player (0  0)
+ * 2) Изменение чисел счета при изменении счета
+ * 3) Добавить PowerUps
+ * 4) Прыжки мяча (координата Z)
+ */
+
 #include <iostream>
 #include <memory>
 #include <map>
