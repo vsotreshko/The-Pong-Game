@@ -25,6 +25,8 @@
 #include "wall.h"
 #include "ball.h"
 #include "score_signs.h"
+#include "left_score.h"
+#include "right_score.h"
 
 using namespace std;
 using namespace glm;
@@ -75,17 +77,23 @@ private:
         auto border_right = make_unique<Border>(-5.75, 0);
         scene.objects.push_back(move(border_right));
 
-        //// Add TOP player to the scene (position: 0 - TOP, 1 - BOTTOM)
+        //// Add BOTTOM player to the scene (position: 0 - TOP, 1 - BOTTOM)
         auto player_top = make_unique<Player>(0);
         scene.objects.push_back(move(player_top));
 
-        //// Add BOTTOM player to the scene
+        //// Add TOP player to the scene
         auto player_bottom = make_unique<Player>(1);
         scene.objects.push_back(move(player_bottom));
 
         //// Add TOP player SCORE to the scene
         auto score_signs = make_unique<ScoreSigns>();
         scene.objects.push_back(move(score_signs));
+
+        auto score_left = make_unique<Left_score>();
+        scene.objects.push_back(move(score_left));
+
+        auto score_right = make_unique<Right_score>();
+        scene.objects.push_back(move(score_right));
     }
 
 public:

@@ -31,7 +31,7 @@ public:
     float acceleration{0.0f};
 
     int score;
-    std::vector<std::unique_ptr<ScoreNumber>> score_sign;
+    std::vector<std::unique_ptr<ScoreNumber>> score_signes;
 
     /*!
      * Create new asteroid
@@ -57,5 +57,6 @@ public:
 //     */
 //    void onClick(Scene &scene) override;
 
+    void increaseScore(Scene &scene, float dt, int to_Score);
 private:
 };

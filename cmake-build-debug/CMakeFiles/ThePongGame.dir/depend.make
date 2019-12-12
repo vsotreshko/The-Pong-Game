@@ -16,8 +16,10 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.c
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/border.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/camera.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/left_score.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/object.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/player.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/right_score.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/scene.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/score_number.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: shaders/diffuse_frag_glsl.h
@@ -69,6 +71,23 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o: ../src/ThePongGame/scen
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o: shaders/diffuse_frag_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o: shaders/diffuse_vert_glsl.h
 
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/image.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/image_bmp.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/image_raw.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/mesh.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/ppgso.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/shader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/texture.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/tiny_obj_loader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../ppgso/window.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../src/ThePongGame/camera.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../src/ThePongGame/object.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../src/ThePongGame/scene.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../src/ThePongGame/left_score.cpp
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: ../src/ThePongGame/left_score.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: shaders/diffuse_frag_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o: shaders/diffuse_vert_glsl.h
+
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../ppgso/image.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../ppgso/image_bmp.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../ppgso/image_raw.h
@@ -84,10 +103,12 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/ball.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/border.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/camera.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/ground.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/left_score.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/main.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/object.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/player.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/playground.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/right_score.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/scene.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/score_number.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/score_signs.h
@@ -132,6 +153,23 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o: ../src/ThePongGame/
 CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o: ../src/ThePongGame/scene.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o: shaders/diffuse_frag_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o: shaders/diffuse_vert_glsl.h
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/image.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/image_bmp.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/image_raw.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/mesh.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/ppgso.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/shader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/texture.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/tiny_obj_loader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../ppgso/window.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../src/ThePongGame/camera.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../src/ThePongGame/object.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../src/ThePongGame/scene.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../src/ThePongGame/right_score.cpp
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: ../src/ThePongGame/right_score.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: shaders/diffuse_frag_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o: shaders/diffuse_vert_glsl.h
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o: ../ppgso/image.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o: ../ppgso/image_bmp.h

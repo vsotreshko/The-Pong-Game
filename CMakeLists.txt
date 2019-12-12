@@ -126,7 +126,7 @@ add_executable(ThePongGame
         src/ThePongGame/score_signs.h
         src/ThePongGame/score_number.cpp
         src/ThePongGame/score_number.h
-        )
+        src/ThePongGame/left_score.cpp src/ThePongGame/left_score.h src/ThePongGame/right_score.cpp src/ThePongGame/right_score.h)
 target_link_libraries(ThePongGame ppgso shaders)
 install(TARGETS ThePongGame DESTINATION .)
 

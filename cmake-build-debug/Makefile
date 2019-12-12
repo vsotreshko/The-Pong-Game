@@ -735,6 +735,33 @@ src/ThePongGame/ground.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.s
 .PHONY : src/ThePongGame/ground.cpp.s
 
+src/ThePongGame/left_score.o: src/ThePongGame/left_score.cpp.o
+
+.PHONY : src/ThePongGame/left_score.o
+
+# target to build an object file
+src/ThePongGame/left_score.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o
+.PHONY : src/ThePongGame/left_score.cpp.o
+
+src/ThePongGame/left_score.i: src/ThePongGame/left_score.cpp.i
+
+.PHONY : src/ThePongGame/left_score.i
+
+# target to preprocess a source file
+src/ThePongGame/left_score.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.i
+.PHONY : src/ThePongGame/left_score.cpp.i
+
+src/ThePongGame/left_score.s: src/ThePongGame/left_score.cpp.s
+
+.PHONY : src/ThePongGame/left_score.s
+
+# target to generate assembly for a file
+src/ThePongGame/left_score.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.s
+.PHONY : src/ThePongGame/left_score.cpp.s
+
 src/ThePongGame/main.o: src/ThePongGame/main.cpp.o
 
 .PHONY : src/ThePongGame/main.o
@@ -842,6 +869,33 @@ src/ThePongGame/playground.s: src/ThePongGame/playground.cpp.s
 src/ThePongGame/playground.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.s
 .PHONY : src/ThePongGame/playground.cpp.s
+
+src/ThePongGame/right_score.o: src/ThePongGame/right_score.cpp.o
+
+.PHONY : src/ThePongGame/right_score.o
+
+# target to build an object file
+src/ThePongGame/right_score.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o
+.PHONY : src/ThePongGame/right_score.cpp.o
+
+src/ThePongGame/right_score.i: src/ThePongGame/right_score.cpp.i
+
+.PHONY : src/ThePongGame/right_score.i
+
+# target to preprocess a source file
+src/ThePongGame/right_score.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.i
+.PHONY : src/ThePongGame/right_score.cpp.i
+
+src/ThePongGame/right_score.s: src/ThePongGame/right_score.cpp.s
+
+.PHONY : src/ThePongGame/right_score.s
+
+# target to generate assembly for a file
+src/ThePongGame/right_score.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.s
+.PHONY : src/ThePongGame/right_score.cpp.s
 
 src/ThePongGame/scene.o: src/ThePongGame/scene.cpp.o
 
@@ -1026,6 +1080,9 @@ help:
 	@echo "... src/ThePongGame/ground.o"
 	@echo "... src/ThePongGame/ground.i"
 	@echo "... src/ThePongGame/ground.s"
+	@echo "... src/ThePongGame/left_score.o"
+	@echo "... src/ThePongGame/left_score.i"
+	@echo "... src/ThePongGame/left_score.s"
 	@echo "... src/ThePongGame/main.o"
 	@echo "... src/ThePongGame/main.i"
 	@echo "... src/ThePongGame/main.s"
@@ -1038,6 +1095,9 @@ help:
 	@echo "... src/ThePongGame/playground.o"
 	@echo "... src/ThePongGame/playground.i"
 	@echo "... src/ThePongGame/playground.s"
+	@echo "... src/ThePongGame/right_score.o"
+	@echo "... src/ThePongGame/right_score.i"
+	@echo "... src/ThePongGame/right_score.s"
 	@echo "... src/ThePongGame/scene.o"
 	@echo "... src/ThePongGame/scene.i"
 	@echo "... src/ThePongGame/scene.s"

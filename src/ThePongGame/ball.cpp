@@ -6,6 +6,9 @@
 #include "ball.h"
 #include "player.h"
 #include "border.h"
+#include "score_number.h"
+#include "left_score.h"
+#include "right_score.h"
 
 using namespace std;
 using namespace glm;
@@ -43,6 +46,8 @@ Ball::Ball() {
 bool Ball::update(Scene &scene, float dt) {
     // Animate position according to time
     position += speed * dt;
+    bool increaseLeft = false;
+    bool increaseRight = false;
 
     for (auto &obj : scene.objects) {
         if (obj.get() == this) continue;
@@ -64,10 +69,14 @@ bool Ball::update(Scene &scene, float dt) {
                 if(player->bottom) {
                     cout<<"Player TOP +1"<<endl;
                     cout<<"Actual score:"<<player->score<<endl;
+                    auto right_score = dynamic_cast<Right_score *>(obj.get());
+                    right_score->updateNumber(player->score);
                 }
                 if(player->top) {
                     cout<<"Player BOTTOM +1"<<endl;
                     cout<<"Actual score:"<<player->score<<endl;
+                    auto left_score = dynamic_cast<Left_score *>(obj.get());
+                    left_score->updateNumber(player->score);
                 }
                 return false;
             }

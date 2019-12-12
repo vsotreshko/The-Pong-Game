@@ -39,17 +39,20 @@ Player::Player(int position) {
     turned = false;
 
     score = 0;
-    auto scoresign = make_unique<ScoreNumber>();
-    if (this->position.y > 0){
-        scoresign->position.x = this->position.y - 5;
-    }
-    if (this->position.y < 0){
-        scoresign->position.x = this->position.y + 5;
-    }
+
+//    auto scoresign = make_unique<ScoreNumber>();
+//    if (this->position.y > 0){
+//        scoresign->position.x = this->position.y - 5;
+//    }
+//    if (this->position.y < 0){
+//        scoresign->position.x = this->position.y + 5;
+//    }
+//    score_signes.push_back(move(scoresign));
 }
 
 bool Player::update(Scene &scene, float dt) {
-    for (auto& obj : this->score_sign) {
+    //Updated rendered player lifes
+    for (auto& obj : this->score_signes) {
         obj->update(scene, dt);
     }
 
@@ -94,6 +97,11 @@ bool Player::update(Scene &scene, float dt) {
 
 
 void Player::render(Scene &scene) {
+    //Render player score
+    for (auto& obj : this->score_signes) {
+        obj->render(scene);
+    }
+
     shader->use();
     shader->setUniform("LightDirection", scene.lightDirection);
     shader->setUniform("LightColor", scene.lightColor);
@@ -112,6 +120,12 @@ void Player::render(Scene &scene) {
 
     shader->setUniform("Texture", *texture);
     mesh->render();
+}
+
+void Player::increaseScore(Scene &scene, float dt, int to_Score) {
+        for (auto& obj : this->score_signes) {
+            obj->updateNumber(to_Score);
+        }
 }
 
 

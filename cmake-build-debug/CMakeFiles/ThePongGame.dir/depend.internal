@@ -17,8 +17,10 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.h
  shaders/diffuse_frag_glsl.h
@@ -69,6 +71,23 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
  shaders/diffuse_frag_glsl.h
  shaders/diffuse_vert_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o
+ ../ppgso/image.h
+ ../ppgso/image_bmp.h
+ ../ppgso/image_raw.h
+ ../ppgso/mesh.h
+ ../ppgso/ppgso.h
+ ../ppgso/shader.h
+ ../ppgso/texture.h
+ ../ppgso/tiny_obj_loader.h
+ ../ppgso/window.h
+ ../src/ThePongGame/camera.h
+ ../src/ThePongGame/object.h
+ ../src/ThePongGame/scene.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.h
+ shaders/diffuse_frag_glsl.h
+ shaders/diffuse_vert_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o
  ../ppgso/image.h
  ../ppgso/image_bmp.h
@@ -85,10 +104,12 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.h
@@ -131,6 +152,23 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
+ shaders/diffuse_frag_glsl.h
+ shaders/diffuse_vert_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o
+ ../ppgso/image.h
+ ../ppgso/image_bmp.h
+ ../ppgso/image_raw.h
+ ../ppgso/mesh.h
+ ../ppgso/ppgso.h
+ ../ppgso/shader.h
+ ../ppgso/texture.h
+ ../ppgso/tiny_obj_loader.h
+ ../ppgso/window.h
+ ../src/ThePongGame/camera.h
+ ../src/ThePongGame/object.h
+ ../src/ThePongGame/scene.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.h
  shaders/diffuse_frag_glsl.h
  shaders/diffuse_vert_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o

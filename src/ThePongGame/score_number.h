@@ -24,6 +24,9 @@ private:
     static std::map<std::string, int> material_map;
 
 public:
+
+    void updateNumber(int number);
+
     /*!
      * Create new asteroid
      */

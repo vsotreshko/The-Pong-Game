@@ -25,9 +25,9 @@ ScoreNumber::ScoreNumber() {
     ifstream mtl("score_0.mtl", std::ifstream::binary);
     tinyobj::LoadMtl(this->material_map, this->material, mtl);
 
-    this->position.x = -0.5;
+    this->position.x = -1;
     this->position.y = 0;
-    this->position.z = -2;
+    this->position.z = -3;
 }
 
 bool ScoreNumber::update(Scene &scene, float dt) {
@@ -57,6 +57,45 @@ void ScoreNumber::render(Scene &scene) {
 
     shader->setUniform("Texture", *texture);
     mesh->render();
+}
+
+
+void ScoreNumber::updateNumber(int number) {
+    switch (number)
+    {
+        case 1:
+            this->shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+            this->texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+            this->mesh = make_unique<Mesh>("score_1.obj");
+            break;
+
+        case 2:
+            this->shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+            this->texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+            this->mesh = make_unique<Mesh>("score_2.obj");
+            break;
+
+        case 3:
+            this->shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+            this->texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+            this->mesh = make_unique<Mesh>("score_3.obj");
+            break;
+
+        case 4:
+            this->shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+            this->texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+            this->mesh = make_unique<Mesh>("score_4.obj");
+            break;
+
+        case 5:
+            this->shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+            this->texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+            this->mesh = make_unique<Mesh>("score_5.obj");
+            break;
+
+        default: // code to be executed if n doesn't match any cases
+            break;
+    }
 }
 
 

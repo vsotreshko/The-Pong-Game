@@ -61,6 +61,16 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp"
+},
+{
+  "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp"
+},
+{
+  "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
   "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/mesh.cpp",
   "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/mesh.cpp"
 },

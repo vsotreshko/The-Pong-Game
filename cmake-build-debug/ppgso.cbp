@@ -382,6 +382,12 @@
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.h">
 			<Option target="ThePongGame"/>
 		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.h">
+			<Option target="ThePongGame"/>
+		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp">
 			<Option target="ThePongGame"/>
 		</Unit>
@@ -401,6 +407,12 @@
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.h">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp">
