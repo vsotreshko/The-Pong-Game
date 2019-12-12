@@ -51,8 +51,13 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/top_player_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/top_player_score.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/top_player_score.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp"
+},
+{
+  "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",

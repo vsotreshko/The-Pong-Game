@@ -3,6 +3,7 @@
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 #include "player.h"
+#include "scene.h"
 
 using namespace std;
 using namespace glm;
@@ -26,7 +27,7 @@ Player::Player(int position) {
     tinyobj::LoadMtl(this->material_map, this->material, mtl);
 
     bottom = false;
-    top = true;
+    top = false;
 
     if (position == 0) {
         this->position.y = -7;
@@ -36,9 +37,22 @@ Player::Player(int position) {
         bottom = true;
     }
     turned = false;
+
+    score = 0;
+    auto scoresign = make_unique<ScoreNumber>();
+    if (this->position.y > 0){
+        scoresign->position.x = this->position.y - 5;
+    }
+    if (this->position.y < 0){
+        scoresign->position.x = this->position.y + 5;
+    }
 }
 
 bool Player::update(Scene &scene, float dt) {
+    for (auto& obj : this->score_sign) {
+        obj->update(scene, dt);
+    }
+
     // Player moves (Keyboard)
     if(scene.keyboard[GLFW_KEY_LEFT]) {
         if (position.x >= 2 && !turned) {

@@ -13,7 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/player.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/top_player_score.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/top_player_score.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/wall.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -17,6 +17,7 @@
 #include "player.h"
 #include "wall.h"
 #include "ball.h"
+#include "score_signs.h"
 
 using namespace std;
 using namespace glm;
@@ -74,6 +75,10 @@ private:
         //// Add BOTTOM player to the scene
         auto player_bottom = make_unique<Player>(1);
         scene.objects.push_back(move(player_bottom));
+
+        //// Add TOP player SCORE to the scene
+        auto score_signs = make_unique<ScoreSigns>();
+        scene.objects.push_back(move(score_signs));
     }
 
 public:

@@ -114,39 +114,27 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp
-glm/gtc/random.hpp
--
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-ball.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
-player.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
-border.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.h
-
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
+../src/ThePongGame/object.h
 memory
 -
-ppgso/ppgso.h
+list
 -
-scene.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
-object.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
+map
+-
+glm/glm.hpp
+-
 
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.h
+../src/ThePongGame/scene.h
 memory
 -
-ppgso/ppgso.h
+map
 -
-scene.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
+list
+-
 object.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
+../src/ThePongGame/object.h
+camera.h
+../src/ThePongGame/camera.h
 
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.h
 memory
@@ -166,6 +154,18 @@ map
 glm/glm.hpp
 -
 
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp
+glm/gtc/random.hpp
+-
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+player.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
+
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
 memory
 -
@@ -175,6 +175,8 @@ scene.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
 object.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
+score_number.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.h
 
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h
 memory
@@ -187,6 +189,16 @@ object.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.h
 camera.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.h
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/scene.h
+src/ThePongGame/object.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/object.h
 
 shaders/diffuse_frag_glsl.h
 string

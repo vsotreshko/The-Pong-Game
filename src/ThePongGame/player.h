@@ -5,6 +5,7 @@
 
 #include "scene.h"
 #include "object.h"
+#include "score_number.h"
 
 /*!
  * Simple asteroid object
@@ -28,6 +29,9 @@ public:
     bool top;
     bool bottom;
     float acceleration{0.0f};
+
+    int score;
+    std::vector<std::unique_ptr<ScoreNumber>> score_sign;
 
     /*!
      * Create new asteroid

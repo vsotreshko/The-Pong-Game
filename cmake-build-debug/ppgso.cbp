@@ -409,10 +409,16 @@
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.h">
 			<Option target="ThePongGame"/>
 		</Unit>
-		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/top_player_score.cpp">
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp">
 			<Option target="ThePongGame"/>
 		</Unit>
-		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/top_player_score.h">
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.h">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp">

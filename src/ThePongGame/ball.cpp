@@ -1,3 +1,4 @@
+#include "iostream"
 #include <glm/gtc/random.hpp>
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -56,6 +57,17 @@ bool Ball::update(Scene &scene, float dt) {
                 speed.x *= -1;
 //                speed.x = (15.0f * - sin(angle)) * player->acceleration;
                 speed.y = (10.0f * -sin(angle));
+            }
+
+            if ((position.y > 8 && player->bottom) || (position.y < -8 && player->top)) {
+                player->score +=1;
+                if(player->top) {
+                    cout<<"Player TOP +1"<<endl;
+                }
+                if(player->bottom) {
+                    cout<<"Player BOTTOM +1"<<endl;
+                }
+                return false;
             }
         }
 

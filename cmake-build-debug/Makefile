@@ -870,32 +870,59 @@ src/ThePongGame/scene.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.s
 .PHONY : src/ThePongGame/scene.cpp.s
 
-src/ThePongGame/top_player_score.o: src/ThePongGame/top_player_score.cpp.o
+src/ThePongGame/score_number.o: src/ThePongGame/score_number.cpp.o
 
-.PHONY : src/ThePongGame/top_player_score.o
+.PHONY : src/ThePongGame/score_number.o
 
 # target to build an object file
-src/ThePongGame/top_player_score.cpp.o:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/top_player_score.cpp.o
-.PHONY : src/ThePongGame/top_player_score.cpp.o
+src/ThePongGame/score_number.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.o
+.PHONY : src/ThePongGame/score_number.cpp.o
 
-src/ThePongGame/top_player_score.i: src/ThePongGame/top_player_score.cpp.i
+src/ThePongGame/score_number.i: src/ThePongGame/score_number.cpp.i
 
-.PHONY : src/ThePongGame/top_player_score.i
+.PHONY : src/ThePongGame/score_number.i
 
 # target to preprocess a source file
-src/ThePongGame/top_player_score.cpp.i:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/top_player_score.cpp.i
-.PHONY : src/ThePongGame/top_player_score.cpp.i
+src/ThePongGame/score_number.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.i
+.PHONY : src/ThePongGame/score_number.cpp.i
 
-src/ThePongGame/top_player_score.s: src/ThePongGame/top_player_score.cpp.s
+src/ThePongGame/score_number.s: src/ThePongGame/score_number.cpp.s
 
-.PHONY : src/ThePongGame/top_player_score.s
+.PHONY : src/ThePongGame/score_number.s
 
 # target to generate assembly for a file
-src/ThePongGame/top_player_score.cpp.s:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/top_player_score.cpp.s
-.PHONY : src/ThePongGame/top_player_score.cpp.s
+src/ThePongGame/score_number.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.s
+.PHONY : src/ThePongGame/score_number.cpp.s
+
+src/ThePongGame/score_signs.o: src/ThePongGame/score_signs.cpp.o
+
+.PHONY : src/ThePongGame/score_signs.o
+
+# target to build an object file
+src/ThePongGame/score_signs.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.o
+.PHONY : src/ThePongGame/score_signs.cpp.o
+
+src/ThePongGame/score_signs.i: src/ThePongGame/score_signs.cpp.i
+
+.PHONY : src/ThePongGame/score_signs.i
+
+# target to preprocess a source file
+src/ThePongGame/score_signs.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.i
+.PHONY : src/ThePongGame/score_signs.cpp.i
+
+src/ThePongGame/score_signs.s: src/ThePongGame/score_signs.cpp.s
+
+.PHONY : src/ThePongGame/score_signs.s
+
+# target to generate assembly for a file
+src/ThePongGame/score_signs.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.s
+.PHONY : src/ThePongGame/score_signs.cpp.s
 
 src/ThePongGame/wall.o: src/ThePongGame/wall.cpp.o
 
@@ -1014,9 +1041,12 @@ help:
 	@echo "... src/ThePongGame/scene.o"
 	@echo "... src/ThePongGame/scene.i"
 	@echo "... src/ThePongGame/scene.s"
-	@echo "... src/ThePongGame/top_player_score.o"
-	@echo "... src/ThePongGame/top_player_score.i"
-	@echo "... src/ThePongGame/top_player_score.s"
+	@echo "... src/ThePongGame/score_number.o"
+	@echo "... src/ThePongGame/score_number.i"
+	@echo "... src/ThePongGame/score_number.s"
+	@echo "... src/ThePongGame/score_signs.o"
+	@echo "... src/ThePongGame/score_signs.i"
+	@echo "... src/ThePongGame/score_signs.s"
 	@echo "... src/ThePongGame/wall.o"
 	@echo "... src/ThePongGame/wall.i"
 	@echo "... src/ThePongGame/wall.s"
