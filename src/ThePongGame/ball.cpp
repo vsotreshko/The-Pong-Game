@@ -59,13 +59,15 @@ bool Ball::update(Scene &scene, float dt) {
                 speed.y = (10.0f * -sin(angle));
             }
 
-            if ((position.y > 8 && player->bottom) || (position.y < -8 && player->top)) {
+            if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
                 player->score +=1;
-                if(player->top) {
-                    cout<<"Player TOP +1"<<endl;
-                }
                 if(player->bottom) {
+                    cout<<"Player TOP +1"<<endl;
+                    cout<<"Actual score:"<<player->score<<endl;
+                }
+                if(player->top) {
                     cout<<"Player BOTTOM +1"<<endl;
+                    cout<<"Actual score:"<<player->score<<endl;
                 }
                 return false;
             }
