@@ -6,33 +6,33 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/object.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/object.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/object.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/object.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/camera.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/scene.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/scene.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/scene.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/playground.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/ground.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/ground.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/ground.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/border.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/border.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/border.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/border.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
@@ -41,8 +41,8 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/wall.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wall.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wall.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wall.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
@@ -51,23 +51,23 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/score_signs.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_signs.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_signs.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/score_number.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_number.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_number.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/left_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/left_score.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/left_score.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
-  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp",
-  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp"
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/right_score.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/right_score.cpp",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/right_score.cpp"
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",

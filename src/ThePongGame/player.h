@@ -3,9 +3,9 @@
 
 #include <ppgso/ppgso.h>
 
-#include "scene.h"
-#include "object.h"
-#include "score_number.h"
+#include "src/ThePongGame/Main Objects/scene.h"
+#include "src/ThePongGame/Main Objects/object.h"
+#include "src/ThePongGame/Score/score_number.h"
 
 /*!
  * Simple asteroid object
@@ -29,6 +29,7 @@ public:
     bool top;
     bool bottom;
     float acceleration{0.0f};
+    int moves;
 
     int score;
     std::vector<std::unique_ptr<ScoreNumber>> score_signes;
@@ -36,7 +37,7 @@ public:
     /*!
      * Create new asteroid
      */
-    Player(int position);
+    Player(int position, int moves_);
 
     /*!
      * Update asteroid

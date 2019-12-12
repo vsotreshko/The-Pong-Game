@@ -3,8 +3,8 @@
 
 #include <ppgso/ppgso.h>
 
-#include "scene.h"
-#include "object.h"
+#include "src/ThePongGame/Main Objects/scene.h"
+#include "src/ThePongGame/Main Objects/object.h"
 
 /*!
  * Simple asteroid object

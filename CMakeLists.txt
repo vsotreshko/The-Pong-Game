@@ -104,29 +104,29 @@ target_include_directories(ppgso PUBLIC
 # ThePongGame
 add_executable(ThePongGame
         src/ThePongGame/main.cpp
-        src/ThePongGame/object.cpp
-        src/ThePongGame/object.h
-        src/ThePongGame/camera.cpp
-        src/ThePongGame/camera.h
-        src/ThePongGame/scene.cpp
-        src/ThePongGame/scene.h
-        src/ThePongGame/playground.cpp
-        src/ThePongGame/playground.h
-        src/ThePongGame/ground.cpp
-        src/ThePongGame/ground.h
-        src/ThePongGame/border.cpp
-        src/ThePongGame/border.h
+        "src/ThePongGame/Main Objects/object.cpp"
+        "src/ThePongGame/Main Objects/object.h"
+        "src/ThePongGame/Main Objects/camera.cpp"
+        "src/ThePongGame/Main Objects/camera.h"
+        "src/ThePongGame/Main Objects/scene.cpp"
+        "src/ThePongGame/Main Objects/scene.h"
+        src/ThePongGame/Table/playground.cpp
+        src/ThePongGame/Table/playground.h
+        "src/ThePongGame/Decoration Objects/ground.cpp"
+        "src/ThePongGame/Decoration Objects/ground.h"
+        src/ThePongGame/Table/border.cpp
+        src/ThePongGame/Table/border.h
         src/ThePongGame/player.cpp
         src/ThePongGame/player.h
-        src/ThePongGame/wall.cpp
-        src/ThePongGame/wall.h
+        "src/ThePongGame/Decoration Objects/wall.cpp"
+        "src/ThePongGame/Decoration Objects/wall.h"
         src/ThePongGame/ball.cpp
         src/ThePongGame/ball.h
-        src/ThePongGame/score_signs.cpp
-        src/ThePongGame/score_signs.h
-        src/ThePongGame/score_number.cpp
-        src/ThePongGame/score_number.h
-        src/ThePongGame/left_score.cpp src/ThePongGame/left_score.h src/ThePongGame/right_score.cpp src/ThePongGame/right_score.h)
+        src/ThePongGame/Score/score_signs.cpp
+        src/ThePongGame/Score/score_signs.h
+        src/ThePongGame/Score/score_number.cpp
+        src/ThePongGame/Score/score_number.h
+        src/ThePongGame/Score/left_score.cpp src/ThePongGame/Score/left_score.h src/ThePongGame/Score/right_score.cpp src/ThePongGame/Score/right_score.h)
 target_link_libraries(ThePongGame ppgso shaders)
 install(TARGETS ThePongGame DESTINATION .)
 

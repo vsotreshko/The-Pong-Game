@@ -5,10 +5,11 @@
 #include <shaders/diffuse_frag_glsl.h>
 #include "ball.h"
 #include "player.h"
-#include "border.h"
-#include "score_number.h"
-#include "left_score.h"
-#include "right_score.h"
+#include "src/ThePongGame/Table/border.h"
+#include "src/ThePongGame/Score/score_number.h"
+#include "src/ThePongGame/Score/left_score.h"
+#include "src/ThePongGame/Score/right_score.h"
+#include "src/ThePongGame/Table/playground.h"
 
 using namespace std;
 using namespace glm;
@@ -32,22 +33,27 @@ Ball::Ball() {
     tinyobj::LoadMtl(this->material_map, this->material, mtl);
 
     this->scale*=0.5;
-    this->position.z = -(this->scale.z / 2);
+    this->position.z = -(this->scale.z / 2) - 1;
+//    this->position.z = -(this->scale.z / 2) - 0.01;
+//    this->position.y = -3;
 
-    speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
+//    speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
+    speed = {linearRand(-7.0f, 7.0f), linearRand(5.0f, 7.0f), 1.5f};
 //    speed = {0.0f,-3.0f,0.0f};
 
-    //// Random start Y speed direction
-    if(rand() % 2 == 0) {
-        speed.y *= -1;
-    }
+//    //// Random start Y speed direction
+//    if(rand() % 2 == 0) {
+//        speed.y *= -1;
+//    }
 }
 
 bool Ball::update(Scene &scene, float dt) {
     // Animate position according to time
     position += speed * dt;
-    bool increaseLeft = false;
-    bool increaseRight = false;
+
+//    if (position.y > 0.25 || position.y < -0.25){
+//        speed.y *= (-1);
+//    }
 
     for (auto &obj : scene.objects) {
         if (obj.get() == this) continue;
@@ -62,6 +68,7 @@ bool Ball::update(Scene &scene, float dt) {
                 speed.x *= -1;
 //                speed.x = (15.0f * - sin(angle)) * player->acceleration;
                 speed.y = (10.0f * -sin(angle));
+                if(speed.z < 0) speed.z *= -1;
             }
 
             if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
@@ -89,6 +96,21 @@ bool Ball::update(Scene &scene, float dt) {
             }
         }
 
+        auto playground = dynamic_cast<Playground *>(obj.get());
+        if (playground) {
+            if (distance(position.z, playground->position.z) <= (scale.x)) {
+                speed.z *= (-1);
+            }
+
+            if ((distance(position.y, playground->position.y) < scale.x) &&
+                (distance(position.z, playground->position.z) < Playground::NET_HEIGHT)) {
+                speed.y *= (-1);
+            }
+//
+//            if (distance(position.z, playground->position.z) < 0.1) {
+//                speed.z *= (-1);
+//            }
+        }
     }
 
     // Generate modelMatrix from position, rotation and scale

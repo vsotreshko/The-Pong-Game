@@ -3,11 +3,13 @@
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 #include "player.h"
-#include "scene.h"
+#include "src/ThePongGame/Main Objects/scene.h"
 
 using namespace std;
 using namespace glm;
 using namespace ppgso;
+
+const float SPEED = 0.2;
 
 // Static resources
 unique_ptr<Mesh> Player::mesh;
@@ -17,7 +19,7 @@ unique_ptr<Shader> Player::shader;
 map<std::string, int> Player::material_map;
 vector<tinyobj::material_t> Player::material;
 
-Player::Player(int position) {
+Player::Player(int position, int moves_) {
     // Initialize static resources if needed
     if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
     if (!texture) texture = make_unique<Texture>(image::loadBMP("player_pong.bmp"));
@@ -28,6 +30,8 @@ Player::Player(int position) {
 
     bottom = false;
     top = false;
+
+    moves = moves_;
 
     if (position == 0) {
         this->position.y = -7;
@@ -51,45 +55,104 @@ Player::Player(int position) {
 }
 
 bool Player::update(Scene &scene, float dt) {
-    //Updated rendered player lifes
-    for (auto& obj : this->score_signes) {
-        obj->update(scene, dt);
-    }
-
-    // Player moves (Keyboard)
-    if(scene.keyboard[GLFW_KEY_LEFT]) {
-        if (position.x >= 2 && !turned) {
-            rotation.z = -PI / 4.0f;
-            turned = true;
-        } else if (position.x <= 1.5 && turned){
-            rotation.z = 0;
-            turned = false;
+    if (moves == 1) {
+        //Updated rendered player lifes
+        for (auto &obj : this->score_signes) {
+            obj->update(scene, dt);
         }
 
-        if (position.x <= (5 - scale.x)) {
+        //// MOVE LEFT
+        if (scene.keyboard[GLFW_KEY_LEFT]) {
+            if (position.x >= 2 && !turned) {
+                rotation.z = -PI / 4.0f;
+                turned = true;
+            } else if (position.x <= 1.5 && turned) {
+                rotation.z = 0;
+                turned = false;
+            }
+            if (position.x <= (5 - scale.x)) {
 //            this->acceleration += dt * 1.2;
 //            position.x += 10 * dt * this->acceleration;
-            position.x += 0.3;
+                position.x += SPEED;
+            }
+        } else
+            //// MOVE RIGHT
+            if (scene.keyboard[GLFW_KEY_RIGHT]) {
+                if (position.x <= -2 && !turned) {
+                    rotation.z = PI / 4.0f;
+                    turned = true;
+                } else if (position.x >= -1.5 && turned) {
+                    rotation.z = 0;
+                    turned = false;
+                }
+
+                if (position.x >= (-5 + scale.x)) {
+//                this->acceleration += dt * 1.2;
+//                position.x -= 10 * dt * this->acceleration;
+                    position.x -= SPEED;
+                } else {
+                    // this->acceleration = 1.2;
+                }
+            } else
+                //// MOVE UP
+                if (scene.keyboard[GLFW_KEY_UP]){
+                    if (position.z >= -3) position.z -= SPEED;
+                } else
+                    //// MOVE DOWN
+                    if (scene.keyboard[GLFW_KEY_DOWN]) {
+                        if (position.z <= 0) position.z += SPEED;
+                    }
+
+    } else {
+        //Updated rendered player lifes
+        for (auto &obj : this->score_signes) {
+            obj->update(scene, dt);
         }
 
-    } else
-        if(scene.keyboard[GLFW_KEY_RIGHT]) {
-            if (position.x <= -2 && !turned){
-                rotation.z = PI/4.0f;
+        //// MOVE LEFT
+        if (scene.keyboard[GLFW_KEY_A]) {
+            if (position.x >= 2 && !turned) {
+                rotation.z = -PI / 4.0f;
                 turned = true;
-            } else if (position.x >= -1.5 && turned){
+            } else if (position.x <= 1.5 && turned) {
                 rotation.z = 0;
                 turned = false;
             }
 
-            if (position.x >= (-5 + scale.x)) {
+            if (position.x <= (5 - scale.x)) {
+//            this->acceleration += dt * 1.2;
+//            position.x += 10 * dt * this->acceleration;
+                position.x += SPEED;
+            }
+
+        } else
+            //// MOVE RIGHT
+            if (scene.keyboard[GLFW_KEY_D]) {
+                if (position.x <= -2 && !turned) {
+                    rotation.z = PI / 4.0f;
+                    turned = true;
+                } else if (position.x >= -1.5 && turned) {
+                    rotation.z = 0;
+                    turned = false;
+                }
+
+                if (position.x >= (-5 + scale.x)) {
 //                this->acceleration += dt * 1.2;
 //                position.x -= 10 * dt * this->acceleration;
-                position.x -= 0.3;
-            } else {
-                // this->acceleration = 1.2;
-            }
-        }
+                    position.x -= SPEED;
+                } else {
+                    // this->acceleration = 1.2;
+                }
+            } else
+                //// MOVE UP
+                if (scene.keyboard[GLFW_KEY_W]){
+                    if (position.z >= -3) position.z -= SPEED;
+                } else
+                    //// MOVE DOWN
+                if (scene.keyboard[GLFW_KEY_S]) {
+                    if (position.z <= 0) position.z += SPEED;
+                }
+    }
 
     generateModelMatrix();
     return true;

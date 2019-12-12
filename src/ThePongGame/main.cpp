@@ -16,17 +16,17 @@
 
 #include <ppgso/ppgso.h>
 
-#include "camera.h"
-#include "scene.h"
-#include "playground.h"
-#include "ground.h"
-#include "border.h"
+#include "src/ThePongGame/Main Objects/camera.h"
+#include "src/ThePongGame/Main Objects/scene.h"
+#include "src/ThePongGame/Table/playground.h"
+#include "src/ThePongGame/Decoration Objects/ground.h"
+#include "src/ThePongGame/Table/border.h"
 #include "player.h"
-#include "wall.h"
+#include "src/ThePongGame/Decoration Objects/wall.h"
 #include "ball.h"
-#include "score_signs.h"
-#include "left_score.h"
-#include "right_score.h"
+#include "src/ThePongGame/Score/score_signs.h"
+#include "src/ThePongGame/Score/left_score.h"
+#include "src/ThePongGame/Score/right_score.h"
 
 using namespace std;
 using namespace glm;
@@ -44,17 +44,6 @@ private:
 
         //// Create a camera
         auto camera = make_unique<Camera>(80.0f, 1.0f, 0.1f, 100.0f);
-        camera->position.x = 0;
-        camera->position.y = -12;
-        camera->position.z = -5;
-
-        camera->up.x = 0;
-        camera->up.y = 1;
-        camera->up.z = 0;
-
-        camera->back.x = 0;
-        camera->back.y = -2;
-        camera->back.z = -1.5;
         scene.camera = move(camera);
 
         //// Add playground to the scene
@@ -78,11 +67,11 @@ private:
         scene.objects.push_back(move(border_right));
 
         //// Add BOTTOM player to the scene (position: 0 - TOP, 1 - BOTTOM)
-        auto player_top = make_unique<Player>(0);
+        auto player_top = make_unique<Player>(0, 1);
         scene.objects.push_back(move(player_top));
 
         //// Add TOP player to the scene
-        auto player_bottom = make_unique<Player>(1);
+        auto player_bottom = make_unique<Player>(1, -1);
         scene.objects.push_back(move(player_bottom));
 
         //// Add TOP player SCORE to the scene
@@ -124,16 +113,92 @@ public:
     void onKey(int key, int scanCode, int action, int mods) override {
         scene.keyboard[key] = action;
 
-        // Reset
+        //// Add ball to the Game
         if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
             auto ball = make_unique<Ball>();
             scene.objects.push_back(move(ball));
         }
 
-        // Pause
+        //// Pause Game
         if (key == GLFW_KEY_P && action == GLFW_PRESS) {
             animate = !animate;
         }
+
+        /*!
+        * Camera
+        */
+        //// Change camera position on UP
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_2]){
+            scene.camera->cameraUP();
+        }
+
+        //// Change camera position on DEFAULT
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_1]){
+            scene.camera->cameraDEFAULT();
+        }
+
+        //// Move camera POSITION 0X
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->position.x += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->position.x -= 0.1;
+
+        //// Move camera POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->position.y += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->position.y -= 0.1;
+
+        //// Move camera POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->position.z += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_P] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->position.z -= 0.1;
+
+        //// Move camera BACK 0X
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->back.x += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->back.x -= 0.1;
+
+        //// Move camera BACK 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->back.y += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->back.y -= 0.1;
+
+        //// Move camera BACK 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->back.z += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_B] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->back.z -= 0.1;
+
+        //// Move camera UP 0X
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->up.x += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->up.x -= 0.1;
+
+        //// Move camera UP 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->up.y += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->up.y -= 0.1;
+
+        //// Move camera UP 0Y
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.camera->up.z += 0.1;
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_U] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.camera->up.z -= 0.1;
+
+        /*!
+         * Light
+         */
+        //// Move MAIN Light DIRECTION 0X
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.x += 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.x -= 0.1;
+
+        //// Move MAIN Light POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.y += 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.y -= 0.1;
+
+        //// Move MAIN Light POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.z += 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.z -= 0.1;
+
+        //// Move SECOND Light DIRECTION 0X
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection2.x += 0.1;
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection2.x -= 0.1;
+
+        //// Move SECOND Light POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection2.y += 0.1;
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection2.y -= 0.1;
+
+        //// Move SECOND Light POSITION 0Y
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection2.z += 0.1;
+        if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection2.z -= 0.1;
     }
 
     /*!

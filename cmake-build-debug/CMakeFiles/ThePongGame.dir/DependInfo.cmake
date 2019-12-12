@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/ground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/ground.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wall.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wall.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/object.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/object.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/scene.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/scene.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/left_score.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/left_score.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/right_score.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/right_score.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_number.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/score_number.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Score/score_signs.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/score_signs.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/border.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/border.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/playground.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/border.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/border.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/camera.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/camera.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/ground.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/left_score.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/left_score.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/object.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/object.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/player.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/playground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/playground.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/right_score.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/right_score.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/scene.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/scene.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_number.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/score_number.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/score_signs.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/score_signs.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/wall.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/wall.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
