@@ -12,6 +12,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../ppgso/tiny_obj_loader.
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../ppgso/window.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/border.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/camera.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/object.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/player.h

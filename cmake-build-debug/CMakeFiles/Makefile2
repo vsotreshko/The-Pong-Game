@@ -79,12 +79,12 @@ CMakeFiles/ThePongGame.dir/all: CMakeFiles/ppgso.dir/all
 CMakeFiles/ThePongGame.dir/all: CMakeFiles/shaders.dir/all
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/depend
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target ThePongGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ThePongGame"
 .PHONY : CMakeFiles/ThePongGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ThePongGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ThePongGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ThePongGame.dir/rule
@@ -106,7 +106,7 @@ CMakeFiles/ThePongGame.dir/clean:
 CMakeFiles/ppgso.dir/all:
 	$(MAKE) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/depend
 	$(MAKE) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20 "Built target ppgso"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21 "Built target ppgso"
 .PHONY : CMakeFiles/ppgso.dir/all
 
 # Build rule for subdir invocation for target.
@@ -133,7 +133,7 @@ CMakeFiles/ppgso.dir/clean:
 CMakeFiles/shaders.dir/all:
 	$(MAKE) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/depend
 	$(MAKE) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target shaders"
 .PHONY : CMakeFiles/shaders.dir/all
 
 # Build rule for subdir invocation for target.

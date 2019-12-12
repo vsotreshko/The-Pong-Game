@@ -110,7 +110,7 @@ add_executable(ThePongGame
         src/ThePongGame/camera.h
         src/ThePongGame/scene.cpp
         src/ThePongGame/scene.h
-        src/ThePongGame/playground.cpp src/ThePongGame/playground.h src/ThePongGame/ground.cpp src/ThePongGame/ground.h src/ThePongGame/border.cpp src/ThePongGame/border.h src/ThePongGame/player.cpp src/ThePongGame/player.h src/ThePongGame/wall.cpp src/ThePongGame/wall.h src/ThePongGame/ball.cpp src/ThePongGame/ball.h)
+        src/ThePongGame/playground.cpp src/ThePongGame/playground.h src/ThePongGame/ground.cpp src/ThePongGame/ground.h src/ThePongGame/border.cpp src/ThePongGame/border.h src/ThePongGame/player.cpp src/ThePongGame/player.h src/ThePongGame/wall.cpp src/ThePongGame/wall.h src/ThePongGame/ball.cpp src/ThePongGame/ball.h src/ThePongGame/top_player_score.cpp src/ThePongGame/top_player_score.h)
 target_link_libraries(ThePongGame ppgso shaders)
 install(TARGETS ThePongGame DESTINATION .)
 

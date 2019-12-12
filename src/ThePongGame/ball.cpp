@@ -4,6 +4,7 @@
 #include <shaders/diffuse_frag_glsl.h>
 #include "ball.h"
 #include "player.h"
+#include "border.h"
 
 using namespace std;
 using namespace glm;
@@ -29,13 +30,13 @@ Ball::Ball() {
     this->scale*=0.5;
     this->position.z = -(this->scale.z / 2);
 
-    //speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
-    speed = {0.0f,-3.0f,0.0f};
+    speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
+//    speed = {0.0f,-3.0f,0.0f};
 
-    // Random start Y speed direction
-//    if(rand() % 2 == 0) {
-//        speed.y *= -1;
-//    }
+    //// Random start Y speed direction
+    if(rand() % 2 == 0) {
+        speed.y *= -1;
+    }
 }
 
 bool Ball::update(Scene &scene, float dt) {
@@ -54,11 +55,19 @@ bool Ball::update(Scene &scene, float dt) {
 
                 speed.x *= -1;
 //                speed.x = (15.0f * - sin(angle)) * player->acceleration;
-                speed.y = (15.0f * - sin(angle));
+                speed.y = (10.0f * -sin(angle));
+            }
+        }
+
+        auto border = dynamic_cast<Border *>(obj.get());
+        if (border) {
+            if (distance(position.x, border->position.x) <= (scale.x)) {
+                speed.x *= (-1);
             }
         }
 
     }
+
     // Generate modelMatrix from position, rotation and scale
     generateModelMatrix();
     return true;

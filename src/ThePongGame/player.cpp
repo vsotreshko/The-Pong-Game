@@ -52,7 +52,7 @@ bool Player::update(Scene &scene, float dt) {
         if (position.x <= (5 - scale.x)) {
 //            this->acceleration += dt * 1.2;
 //            position.x += 10 * dt * this->acceleration;
-            position.x += 0.1;
+            position.x += 0.3;
         }
 
     } else
@@ -68,7 +68,7 @@ bool Player::update(Scene &scene, float dt) {
             if (position.x >= (-5 + scale.x)) {
 //                this->acceleration += dt * 1.2;
 //                position.x -= 10 * dt * this->acceleration;
-                position.x -= 0.1;
+                position.x -= 0.3;
             } else {
                 // this->acceleration = 1.2;
             }
