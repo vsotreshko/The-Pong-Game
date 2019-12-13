@@ -3,6 +3,7 @@
 
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
+#include <src/ThePongGame/Won Signs/won.h>
 #include "ball.h"
 #include "player.h"
 #include "src/ThePongGame/Table/border.h"
@@ -38,7 +39,7 @@ Ball::Ball() {
 //    this->position.y = -3;
 
 //    speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
-    speed = {linearRand(-7.0f, 7.0f), linearRand(5.0f, 7.0f), 1.5f};
+    speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 1.5f};
 //    speed = {0.0f,-3.0f,0.0f};
 
 //    //// Random start Y speed direction
@@ -48,12 +49,10 @@ Ball::Ball() {
 }
 
 bool Ball::update(Scene &scene, float dt) {
+    speed.z += dt * 3;
+
     // Animate position according to time
     position += speed * dt;
-
-//    if (position.y > 0.25 || position.y < -0.25){
-//        speed.y *= (-1);
-//    }
 
     for (auto &obj : scene.objects) {
         if (obj.get() == this) continue;
@@ -65,9 +64,8 @@ bool Ball::update(Scene &scene, float dt) {
 
                 float angle = atan2(dy, dx);
 
-                speed.x *= -1;
-//                speed.x = (15.0f * - sin(angle)) * player->acceleration;
-                speed.y = (10.0f * -sin(angle));
+                speed.x = (5.0f * - sin(angle)) * player->acceleration;
+                speed.y = (5.0f * -sin(angle));
                 if(speed.z < 0) speed.z *= -1;
             }
 
@@ -106,10 +104,6 @@ bool Ball::update(Scene &scene, float dt) {
                 (distance(position.z, playground->position.z) < Playground::NET_HEIGHT)) {
                 speed.y *= (-1);
             }
-//
-//            if (distance(position.z, playground->position.z) < 0.1) {
-//                speed.z *= (-1);
-//            }
         }
     }
 

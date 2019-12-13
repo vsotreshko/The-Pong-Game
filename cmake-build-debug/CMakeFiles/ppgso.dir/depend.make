@@ -33,3 +33,20 @@ CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o: ../ppgso/tiny_obj_loader.h
 CMakeFiles/ppgso.dir/ppgso/window.cpp.o: ../ppgso/window.cpp
 CMakeFiles/ppgso.dir/ppgso/window.cpp.o: ../ppgso/window.h
 
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/image.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/image_bmp.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/image_raw.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/mesh.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/ppgso.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/shader.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/texture.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/tiny_obj_loader.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../ppgso/window.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Main\ Objects/camera.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Main\ Objects/object.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Main\ Objects/scene.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Won\ Signs/won.cpp
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Won\ Signs/won.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: shaders/diffuse_frag_glsl.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: shaders/diffuse_vert_glsl.h
+

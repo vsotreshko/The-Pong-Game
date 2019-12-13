@@ -24,7 +24,7 @@ private:
     static std::map<std::string, int> material_map;
 
 public:
-    constexpr const static float NET_HEIGHT = 0.7;
+    constexpr const static float NET_HEIGHT = 0.6;
 
     /*!
      * Create new asteroid

@@ -111,6 +111,11 @@
 },
 {
   "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
+  "command": "/usr/bin/c++  -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o -c \"/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp\"",
+  "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp"
+},
+{
+  "directory": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug",
   "command": "/usr/bin/c++   -I/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug  -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp",
   "file": "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp"
 },

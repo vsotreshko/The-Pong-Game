@@ -37,7 +37,6 @@ const unsigned int SIZE = 1000;
 class SceneWindow : public Window {
 private:
     Scene scene;
-    bool animate = true;
 
     void initScene() {
         scene.objects.clear();
@@ -46,25 +45,19 @@ private:
         auto camera = make_unique<Camera>(80.0f, 1.0f, 0.1f, 100.0f);
         scene.camera = move(camera);
 
-        //// Add playground to the scene
-        auto playground = make_unique<Playground>();
-        scene.objects.push_back(move(playground));
+        //// Add SCORE to the scene
+        auto score_signs = make_unique<ScoreSigns>();
+        scene.objects.push_back(move(score_signs));
 
-        //// Add ground to the scene
-        auto ground = make_unique<Ground>();
-        scene.objects.push_back(move(ground));
+        auto score_left = make_unique<Left_score>();
+        scene.objects.push_back(move(score_left));
+
+        auto score_right = make_unique<Right_score>();
+        scene.objects.push_back(move(score_right));
 
         //// Add wall to the scene
         auto wall = make_unique<Wall>();
         scene.objects.push_back(move(wall));
-
-        //// Add LEFT border to the scene
-        auto border_left = make_unique<Border>(5.75, 0);
-        scene.objects.push_back(move(border_left));
-
-        //// Add LEFT border to the scene
-        auto border_right = make_unique<Border>(-5.75, 0);
-        scene.objects.push_back(move(border_right));
 
         //// Add BOTTOM player to the scene (position: 0 - TOP, 1 - BOTTOM)
         auto player_top = make_unique<Player>(0, 1);
@@ -74,18 +67,26 @@ private:
         auto player_bottom = make_unique<Player>(1, -1);
         scene.objects.push_back(move(player_bottom));
 
-        //// Add TOP player SCORE to the scene
-        auto score_signs = make_unique<ScoreSigns>();
-        scene.objects.push_back(move(score_signs));
+        //// Add playground to the scene
+        auto playground = make_unique<Playground>();
+        scene.objects.push_back(move(playground));
 
-        auto score_left = make_unique<Left_score>();
-        scene.objects.push_back(move(score_left));
+        //// Add ground to the scene
+        auto ground = make_unique<Ground>();
+        scene.objects.push_back(move(ground));
 
-        auto score_right = make_unique<Right_score>();
-        scene.objects.push_back(move(score_right));
+        //// Add LEFT border to the scene
+        auto border_left = make_unique<Border>(5.75, 0);
+        scene.objects.push_back(move(border_left));
+
+        //// Add LEFT border to the scene
+        auto border_right = make_unique<Border>(-5.75, 0);
+        scene.objects.push_back(move(border_right));
     }
 
 public:
+    bool animate = true;
+
     SceneWindow() : Window{"The Pong Game", SIZE, SIZE} {
         //hideCursor();
         glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
@@ -177,16 +178,16 @@ public:
          * Light
          */
         //// Move MAIN Light DIRECTION 0X
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.x += 0.1;
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.x -= 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.x += 0.05;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.x -= 0.05;
 
         //// Move MAIN Light POSITION 0Y
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.y += 0.1;
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.y -= 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.y += 0.05;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Y] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.y -= 0.05;
 
         //// Move MAIN Light POSITION 0Y
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.z += 0.1;
-        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.z -= 0.1;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection.z += 0.05;
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection.z -= 0.05;
 
         //// Move SECOND Light DIRECTION 0X
         if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_X] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection2.x += 0.1;
@@ -199,6 +200,12 @@ public:
         //// Move SECOND Light POSITION 0Y
         if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_EQUAL]) scene.lightDirection2.z += 0.1;
         if(scene.keyboard[GLFW_KEY_J] && scene.keyboard[GLFW_KEY_Z] && scene.keyboard[GLFW_KEY_MINUS]) scene.lightDirection2.z -= 0.1;
+
+        if(scene.keyboard[GLFW_KEY_L] && scene.keyboard[GLFW_KEY_P]){
+            cout << "X= " << scene.lightDirection.x << endl;
+            cout << "Y= " << scene.lightDirection.y << endl;
+            cout << "Z= " << scene.lightDirection.z << endl;
+        }
     }
 
     /*!

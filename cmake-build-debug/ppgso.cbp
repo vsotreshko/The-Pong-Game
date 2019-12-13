@@ -424,6 +424,12 @@
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.h">
 			<Option target="ThePongGame"/>
 		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp">
+			<Option target="ppgso"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.h">
+			<Option target="ppgso"/>
+		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp">
 			<Option target="ThePongGame"/>
 		</Unit>

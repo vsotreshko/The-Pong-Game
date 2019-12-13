@@ -59,5 +59,7 @@ public:
 //    void onClick(Scene &scene) override;
 
     void increaseScore(Scene &scene, float dt, int to_Score);
+
+    void endGame (Scene &scene, int player);
 private:
 };

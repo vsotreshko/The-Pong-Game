@@ -184,6 +184,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o
  ../src/ThePongGame/Score/score_number.h
  ../src/ThePongGame/Table/border.h
  ../src/ThePongGame/Table/playground.h
+ ../src/ThePongGame/Won Signs/won.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
@@ -227,6 +228,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/player.cpp.o
  ../src/ThePongGame/Main Objects/object.h
  ../src/ThePongGame/Main Objects/scene.h
  ../src/ThePongGame/Score/score_number.h
+ ../src/ThePongGame/Won Signs/won.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
  shaders/diffuse_frag_glsl.h

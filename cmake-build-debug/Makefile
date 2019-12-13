@@ -924,6 +924,33 @@ src/ThePongGame/Table/playground.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/playground.cpp.s
 .PHONY : src/ThePongGame/Table/playground.cpp.s
 
+src/ThePongGame/Won_Signs/won.o: src/ThePongGame/Won_Signs/won.cpp.o
+
+.PHONY : src/ThePongGame/Won_Signs/won.o
+
+# target to build an object file
+src/ThePongGame/Won_Signs/won.cpp.o:
+	$(MAKE) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o
+.PHONY : src/ThePongGame/Won_Signs/won.cpp.o
+
+src/ThePongGame/Won_Signs/won.i: src/ThePongGame/Won_Signs/won.cpp.i
+
+.PHONY : src/ThePongGame/Won_Signs/won.i
+
+# target to preprocess a source file
+src/ThePongGame/Won_Signs/won.cpp.i:
+	$(MAKE) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.i
+.PHONY : src/ThePongGame/Won_Signs/won.cpp.i
+
+src/ThePongGame/Won_Signs/won.s: src/ThePongGame/Won_Signs/won.cpp.s
+
+.PHONY : src/ThePongGame/Won_Signs/won.s
+
+# target to generate assembly for a file
+src/ThePongGame/Won_Signs/won.cpp.s:
+	$(MAKE) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.s
+.PHONY : src/ThePongGame/Won_Signs/won.cpp.s
+
 src/ThePongGame/ball.o: src/ThePongGame/ball.cpp.o
 
 .PHONY : src/ThePongGame/ball.o
@@ -1101,6 +1128,9 @@ help:
 	@echo "... src/ThePongGame/Table/playground.o"
 	@echo "... src/ThePongGame/Table/playground.i"
 	@echo "... src/ThePongGame/Table/playground.s"
+	@echo "... src/ThePongGame/Won_Signs/won.o"
+	@echo "... src/ThePongGame/Won_Signs/won.i"
+	@echo "... src/ThePongGame/Won_Signs/won.s"
 	@echo "... src/ThePongGame/ball.o"
 	@echo "... src/ThePongGame/ball.i"
 	@echo "... src/ThePongGame/ball.s"

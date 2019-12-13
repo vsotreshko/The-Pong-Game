@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o"
   "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o"
   "CMakeFiles/ppgso.dir/ppgso/window.cpp.o"
+  "CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o"
   "libppgso.a"
   "libppgso.pdb"
 )

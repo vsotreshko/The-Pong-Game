@@ -2,6 +2,7 @@
 
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
+#include <src/ThePongGame/Won Signs/won.h>
 #include "player.h"
 #include "src/ThePongGame/Main Objects/scene.h"
 
@@ -43,15 +44,6 @@ Player::Player(int position, int moves_) {
     turned = false;
 
     score = 0;
-
-//    auto scoresign = make_unique<ScoreNumber>();
-//    if (this->position.y > 0){
-//        scoresign->position.x = this->position.y - 5;
-//    }
-//    if (this->position.y < 0){
-//        scoresign->position.x = this->position.y + 5;
-//    }
-//    score_signes.push_back(move(scoresign));
 }
 
 bool Player::update(Scene &scene, float dt) {
@@ -71,8 +63,8 @@ bool Player::update(Scene &scene, float dt) {
                 turned = false;
             }
             if (position.x <= (5 - scale.x)) {
-//            this->acceleration += dt * 1.2;
-//            position.x += 10 * dt * this->acceleration;
+            this->acceleration += dt * 1.2;
+            position.x += 10 * dt * this->acceleration;
                 position.x += SPEED;
             }
         } else
@@ -87,11 +79,11 @@ bool Player::update(Scene &scene, float dt) {
                 }
 
                 if (position.x >= (-5 + scale.x)) {
-//                this->acceleration += dt * 1.2;
-//                position.x -= 10 * dt * this->acceleration;
+                this->acceleration += dt * 1.2;
+                position.x -= 10 * dt * this->acceleration;
                     position.x -= SPEED;
                 } else {
-                    // this->acceleration = 1.2;
+                     this->acceleration = 1.2;
                 }
             } else
                 //// MOVE UP
@@ -120,8 +112,8 @@ bool Player::update(Scene &scene, float dt) {
             }
 
             if (position.x <= (5 - scale.x)) {
-//            this->acceleration += dt * 1.2;
-//            position.x += 10 * dt * this->acceleration;
+                this->acceleration += dt * 1.2;
+                position.x += 10 * dt * this->acceleration;
                 position.x += SPEED;
             }
 
@@ -137,11 +129,11 @@ bool Player::update(Scene &scene, float dt) {
                 }
 
                 if (position.x >= (-5 + scale.x)) {
-//                this->acceleration += dt * 1.2;
-//                position.x -= 10 * dt * this->acceleration;
+                    this->acceleration += dt * 1.2;
+                    position.x -= 10 * dt * this->acceleration;
                     position.x -= SPEED;
                 } else {
-                    // this->acceleration = 1.2;
+                     this->acceleration = 1.2;
                 }
             } else
                 //// MOVE UP
@@ -152,6 +144,11 @@ bool Player::update(Scene &scene, float dt) {
                 if (scene.keyboard[GLFW_KEY_S]) {
                     if (position.z <= 0) position.z += SPEED;
                 }
+    }
+
+    if (score >= 5) {
+        if (top) this->endGame(scene, 0);
+        if (bottom) this->endGame(scene, 1);
     }
 
     generateModelMatrix();
@@ -185,10 +182,10 @@ void Player::render(Scene &scene) {
     mesh->render();
 }
 
-void Player::increaseScore(Scene &scene, float dt, int to_Score) {
-        for (auto& obj : this->score_signes) {
-            obj->updateNumber(to_Score);
-        }
+void Player::endGame(Scene &scene, int player) {
+    scene.camera->cameraUP();
+    auto won = make_unique<Won>(player);
+    scene.objects.push_back(move(won));
 }
 
 

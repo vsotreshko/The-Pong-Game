@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/texture.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/texture.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/tiny_obj_loader.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ppgso.dir/ppgso/window.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

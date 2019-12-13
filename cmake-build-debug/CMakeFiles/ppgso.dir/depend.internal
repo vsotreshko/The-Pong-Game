@@ -33,3 +33,20 @@ CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o
 CMakeFiles/ppgso.dir/ppgso/window.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.h
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o
+ ../ppgso/image.h
+ ../ppgso/image_bmp.h
+ ../ppgso/image_raw.h
+ ../ppgso/mesh.h
+ ../ppgso/ppgso.h
+ ../ppgso/shader.h
+ ../ppgso/texture.h
+ ../ppgso/tiny_obj_loader.h
+ ../ppgso/window.h
+ ../src/ThePongGame/Main Objects/camera.h
+ ../src/ThePongGame/Main Objects/object.h
+ ../src/ThePongGame/Main Objects/scene.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.h
+ shaders/diffuse_frag_glsl.h
+ shaders/diffuse_vert_glsl.h

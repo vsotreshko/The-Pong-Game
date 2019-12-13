@@ -161,6 +161,19 @@ CMakeFiles/ppgso.dir/ppgso/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/ppgso/window.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.cpp -o CMakeFiles/ppgso.dir/ppgso/window.cpp.s
 
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: CMakeFiles/ppgso.dir/flags.make
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o: ../src/ThePongGame/Won\ Signs/won.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o -c "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp"
+
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp" > CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.i
+
+CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp" -o CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.s
+
 # Object files for target ppgso
 ppgso_OBJECTS = \
 "CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o" \
@@ -170,7 +183,8 @@ ppgso_OBJECTS = \
 "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o" \
 "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o" \
 "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o" \
-"CMakeFiles/ppgso.dir/ppgso/window.cpp.o"
+"CMakeFiles/ppgso.dir/ppgso/window.cpp.o" \
+"CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o"
 
 # External object files for target ppgso
 ppgso_EXTERNAL_OBJECTS =
@@ -183,9 +197,10 @@ libppgso.a: CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/texture.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/window.cpp.o
+libppgso.a: CMakeFiles/ppgso.dir/src/ThePongGame/Won_Signs/won.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/build.make
 libppgso.a: CMakeFiles/ppgso.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libppgso.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libppgso.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ppgso.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ppgso.dir/link.txt --verbose=$(VERBOSE)
 
