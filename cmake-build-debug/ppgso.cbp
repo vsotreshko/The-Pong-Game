@@ -358,16 +358,40 @@
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/ppgso/window.h">
 			<Option target="ppgso"/>
 		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/background.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/background.h">
+			<Option target="ThePongGame"/>
+		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/ground.cpp">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/ground.h">
 			<Option target="ThePongGame"/>
 		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/start_screen.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/start_screen.h">
+			<Option target="ThePongGame"/>
+		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wall.cpp">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wall.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBall.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBall.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBallChild.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBallChild.h">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.cpp">
@@ -424,6 +448,12 @@
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.h">
 			<Option target="ThePongGame"/>
 		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.h">
+			<Option target="ThePongGame"/>
+		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Won Signs/won.cpp">
 			<Option target="ppgso"/>
 		</Unit>
@@ -434,6 +464,12 @@
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp">
+			<Option target="ThePongGame"/>
+		</Unit>
+		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.h">
 			<Option target="ThePongGame"/>
 		</Unit>
 		<Unit filename="/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp">

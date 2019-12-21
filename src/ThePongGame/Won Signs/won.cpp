@@ -20,7 +20,7 @@ Won::Won(int player) {
     if (player == 0) {
         // Initialize static resources if needed
         if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-        if (!texture) texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+        if (!texture) texture = make_unique<Texture>(image::loadBMP("white.bmp"));
         if (!mesh) mesh = make_unique<Mesh>("top_won.obj");
 
         ifstream mtl("top_won.mtl", std::ifstream::binary);
@@ -28,14 +28,14 @@ Won::Won(int player) {
     } else {
         // Initialize static resources if needed
         if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-        if (!texture) texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
+        if (!texture) texture = make_unique<Texture>(image::loadBMP("white.bmp"));
         if (!mesh) mesh = make_unique<Mesh>("bottom_won.obj");
 
         ifstream mtl("bottom_won.mtl", std::ifstream::binary);
         tinyobj::LoadMtl(this->material_map, this->material, mtl);
     }
-    position.z = -10;
-    position.y = -2;
+    position.z = -8;
+    position.y = 1;
 }
 
 bool Won::update(Scene &scene, float dt) {

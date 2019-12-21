@@ -44,10 +44,10 @@ class Scene {
     std::map< int, int > keyboard;
 
     // Lights, in this case using only simple directional diffuse lighting
-    glm::vec3 lightDirection = {-0.7f, -0.05f, -0.3f};
-    glm::vec3 lightDirection2 = {0.7f, -0.05f, -0.3f};
+    glm::vec3 lightDirection = normalize(glm::vec3{-0.5f, -0.82f, -0.57f});
+    glm::vec3 lightDirection2 = normalize(glm::vec3{0.5f, -0.82f, -0.57f});
 
-    glm::vec3 lightColor = glm::vec3(0.8f, 0.8f, 0.8f);
+    glm::vec3 lightColor = glm::vec3(0.6f, 0.6f, 0.6f);
     glm::vec3 lightColor2 = lightColor;
 
     glm::vec3 ambientLightColor = glm::vec3(0.2, 0.2, 0.2);

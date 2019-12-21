@@ -25,6 +25,7 @@ private:
 
 public:
     glm::vec3 speed;
+    bool isJumping;
 
     /*!
      * Create new asteroid
@@ -44,6 +45,8 @@ public:
      * @param scene Scene to render in
      */
     void render(Scene &scene) override;
+
+    void startJump(glm::vec3 position);
 
 //    /*!
 //     * Custom click event for asteroid

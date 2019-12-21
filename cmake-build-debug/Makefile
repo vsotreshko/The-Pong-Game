@@ -627,6 +627,33 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
+src/ThePongGame/Decoration_Objects/background.o: src/ThePongGame/Decoration_Objects/background.cpp.o
+
+.PHONY : src/ThePongGame/Decoration_Objects/background.o
+
+# target to build an object file
+src/ThePongGame/Decoration_Objects/background.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.o
+.PHONY : src/ThePongGame/Decoration_Objects/background.cpp.o
+
+src/ThePongGame/Decoration_Objects/background.i: src/ThePongGame/Decoration_Objects/background.cpp.i
+
+.PHONY : src/ThePongGame/Decoration_Objects/background.i
+
+# target to preprocess a source file
+src/ThePongGame/Decoration_Objects/background.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.i
+.PHONY : src/ThePongGame/Decoration_Objects/background.cpp.i
+
+src/ThePongGame/Decoration_Objects/background.s: src/ThePongGame/Decoration_Objects/background.cpp.s
+
+.PHONY : src/ThePongGame/Decoration_Objects/background.s
+
+# target to generate assembly for a file
+src/ThePongGame/Decoration_Objects/background.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.s
+.PHONY : src/ThePongGame/Decoration_Objects/background.cpp.s
+
 src/ThePongGame/Decoration_Objects/ground.o: src/ThePongGame/Decoration_Objects/ground.cpp.o
 
 .PHONY : src/ThePongGame/Decoration_Objects/ground.o
@@ -654,6 +681,33 @@ src/ThePongGame/Decoration_Objects/ground.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/ground.cpp.s
 .PHONY : src/ThePongGame/Decoration_Objects/ground.cpp.s
 
+src/ThePongGame/Decoration_Objects/start_screen.o: src/ThePongGame/Decoration_Objects/start_screen.cpp.o
+
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.o
+
+# target to build an object file
+src/ThePongGame/Decoration_Objects/start_screen.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/start_screen.cpp.o
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.cpp.o
+
+src/ThePongGame/Decoration_Objects/start_screen.i: src/ThePongGame/Decoration_Objects/start_screen.cpp.i
+
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.i
+
+# target to preprocess a source file
+src/ThePongGame/Decoration_Objects/start_screen.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/start_screen.cpp.i
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.cpp.i
+
+src/ThePongGame/Decoration_Objects/start_screen.s: src/ThePongGame/Decoration_Objects/start_screen.cpp.s
+
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.s
+
+# target to generate assembly for a file
+src/ThePongGame/Decoration_Objects/start_screen.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/start_screen.cpp.s
+.PHONY : src/ThePongGame/Decoration_Objects/start_screen.cpp.s
+
 src/ThePongGame/Decoration_Objects/wall.o: src/ThePongGame/Decoration_Objects/wall.cpp.o
 
 .PHONY : src/ThePongGame/Decoration_Objects/wall.o
@@ -680,6 +734,60 @@ src/ThePongGame/Decoration_Objects/wall.s: src/ThePongGame/Decoration_Objects/wa
 src/ThePongGame/Decoration_Objects/wall.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wall.cpp.s
 .PHONY : src/ThePongGame/Decoration_Objects/wall.cpp.s
+
+src/ThePongGame/Decoration_Objects/wallBall.o: src/ThePongGame/Decoration_Objects/wallBall.cpp.o
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.o
+
+# target to build an object file
+src/ThePongGame/Decoration_Objects/wallBall.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.cpp.o
+
+src/ThePongGame/Decoration_Objects/wallBall.i: src/ThePongGame/Decoration_Objects/wallBall.cpp.i
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.i
+
+# target to preprocess a source file
+src/ThePongGame/Decoration_Objects/wallBall.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.i
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.cpp.i
+
+src/ThePongGame/Decoration_Objects/wallBall.s: src/ThePongGame/Decoration_Objects/wallBall.cpp.s
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.s
+
+# target to generate assembly for a file
+src/ThePongGame/Decoration_Objects/wallBall.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.s
+.PHONY : src/ThePongGame/Decoration_Objects/wallBall.cpp.s
+
+src/ThePongGame/Decoration_Objects/wallBallChild.o: src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.o
+
+# target to build an object file
+src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o
+
+src/ThePongGame/Decoration_Objects/wallBallChild.i: src/ThePongGame/Decoration_Objects/wallBallChild.cpp.i
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.i
+
+# target to preprocess a source file
+src/ThePongGame/Decoration_Objects/wallBallChild.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.i
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.cpp.i
+
+src/ThePongGame/Decoration_Objects/wallBallChild.s: src/ThePongGame/Decoration_Objects/wallBallChild.cpp.s
+
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.s
+
+# target to generate assembly for a file
+src/ThePongGame/Decoration_Objects/wallBallChild.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.s
+.PHONY : src/ThePongGame/Decoration_Objects/wallBallChild.cpp.s
 
 src/ThePongGame/Main_Objects/camera.o: src/ThePongGame/Main_Objects/camera.cpp.o
 
@@ -924,6 +1032,33 @@ src/ThePongGame/Table/playground.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/playground.cpp.s
 .PHONY : src/ThePongGame/Table/playground.cpp.s
 
+src/ThePongGame/Table/smallWall.o: src/ThePongGame/Table/smallWall.cpp.o
+
+.PHONY : src/ThePongGame/Table/smallWall.o
+
+# target to build an object file
+src/ThePongGame/Table/smallWall.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o
+.PHONY : src/ThePongGame/Table/smallWall.cpp.o
+
+src/ThePongGame/Table/smallWall.i: src/ThePongGame/Table/smallWall.cpp.i
+
+.PHONY : src/ThePongGame/Table/smallWall.i
+
+# target to preprocess a source file
+src/ThePongGame/Table/smallWall.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.i
+.PHONY : src/ThePongGame/Table/smallWall.cpp.i
+
+src/ThePongGame/Table/smallWall.s: src/ThePongGame/Table/smallWall.cpp.s
+
+.PHONY : src/ThePongGame/Table/smallWall.s
+
+# target to generate assembly for a file
+src/ThePongGame/Table/smallWall.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.s
+.PHONY : src/ThePongGame/Table/smallWall.cpp.s
+
 src/ThePongGame/Won_Signs/won.o: src/ThePongGame/Won_Signs/won.cpp.o
 
 .PHONY : src/ThePongGame/Won_Signs/won.o
@@ -977,6 +1112,33 @@ src/ThePongGame/ball.s: src/ThePongGame/ball.cpp.s
 src/ThePongGame/ball.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.s
 .PHONY : src/ThePongGame/ball.cpp.s
+
+src/ThePongGame/childBall.o: src/ThePongGame/childBall.cpp.o
+
+.PHONY : src/ThePongGame/childBall.o
+
+# target to build an object file
+src/ThePongGame/childBall.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o
+.PHONY : src/ThePongGame/childBall.cpp.o
+
+src/ThePongGame/childBall.i: src/ThePongGame/childBall.cpp.i
+
+.PHONY : src/ThePongGame/childBall.i
+
+# target to preprocess a source file
+src/ThePongGame/childBall.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.i
+.PHONY : src/ThePongGame/childBall.cpp.i
+
+src/ThePongGame/childBall.s: src/ThePongGame/childBall.cpp.s
+
+.PHONY : src/ThePongGame/childBall.s
+
+# target to generate assembly for a file
+src/ThePongGame/childBall.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.s
+.PHONY : src/ThePongGame/childBall.cpp.s
 
 src/ThePongGame/main.o: src/ThePongGame/main.cpp.o
 
@@ -1095,12 +1257,24 @@ help:
 	@echo "... shaders/texture_vert_glsl.o"
 	@echo "... shaders/texture_vert_glsl.i"
 	@echo "... shaders/texture_vert_glsl.s"
+	@echo "... src/ThePongGame/Decoration_Objects/background.o"
+	@echo "... src/ThePongGame/Decoration_Objects/background.i"
+	@echo "... src/ThePongGame/Decoration_Objects/background.s"
 	@echo "... src/ThePongGame/Decoration_Objects/ground.o"
 	@echo "... src/ThePongGame/Decoration_Objects/ground.i"
 	@echo "... src/ThePongGame/Decoration_Objects/ground.s"
+	@echo "... src/ThePongGame/Decoration_Objects/start_screen.o"
+	@echo "... src/ThePongGame/Decoration_Objects/start_screen.i"
+	@echo "... src/ThePongGame/Decoration_Objects/start_screen.s"
 	@echo "... src/ThePongGame/Decoration_Objects/wall.o"
 	@echo "... src/ThePongGame/Decoration_Objects/wall.i"
 	@echo "... src/ThePongGame/Decoration_Objects/wall.s"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBall.o"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBall.i"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBall.s"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBallChild.o"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBallChild.i"
+	@echo "... src/ThePongGame/Decoration_Objects/wallBallChild.s"
 	@echo "... src/ThePongGame/Main_Objects/camera.o"
 	@echo "... src/ThePongGame/Main_Objects/camera.i"
 	@echo "... src/ThePongGame/Main_Objects/camera.s"
@@ -1128,12 +1302,18 @@ help:
 	@echo "... src/ThePongGame/Table/playground.o"
 	@echo "... src/ThePongGame/Table/playground.i"
 	@echo "... src/ThePongGame/Table/playground.s"
+	@echo "... src/ThePongGame/Table/smallWall.o"
+	@echo "... src/ThePongGame/Table/smallWall.i"
+	@echo "... src/ThePongGame/Table/smallWall.s"
 	@echo "... src/ThePongGame/Won_Signs/won.o"
 	@echo "... src/ThePongGame/Won_Signs/won.i"
 	@echo "... src/ThePongGame/Won_Signs/won.s"
 	@echo "... src/ThePongGame/ball.o"
 	@echo "... src/ThePongGame/ball.i"
 	@echo "... src/ThePongGame/ball.s"
+	@echo "... src/ThePongGame/childBall.o"
+	@echo "... src/ThePongGame/childBall.i"
+	@echo "... src/ThePongGame/childBall.s"
 	@echo "... src/ThePongGame/main.o"
 	@echo "... src/ThePongGame/main.i"
 	@echo "... src/ThePongGame/main.s"

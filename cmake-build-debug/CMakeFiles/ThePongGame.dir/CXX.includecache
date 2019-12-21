@@ -129,6 +129,8 @@ list
 -
 map
 -
+vector
+-
 glm/glm.hpp
 -
 
@@ -144,51 +146,25 @@ object.h
 camera.h
 ../src/ThePongGame/Main Objects/camera.h
 
-../src/ThePongGame/Score/score_number.h
-memory
--
-ppgso/ppgso.h
--
-src/ThePongGame/Main Objects/scene.h
-../src/ThePongGame/Score/src/ThePongGame/Main Objects/scene.h
-src/ThePongGame/Main Objects/object.h
-../src/ThePongGame/Score/src/ThePongGame/Main Objects/object.h
-
-../src/ThePongGame/Won Signs/won.h
-memory
--
-ppgso/ppgso.h
--
-src/ThePongGame/Main Objects/scene.h
-../src/ThePongGame/Won Signs/src/ThePongGame/Main Objects/scene.h
-src/ThePongGame/Main Objects/object.h
-../src/ThePongGame/Won Signs/src/ThePongGame/Main Objects/object.h
-
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.cpp
 glm/gtc/random.hpp
 -
 shaders/diffuse_vert_glsl.h
 -
 shaders/diffuse_frag_glsl.h
 -
-src/ThePongGame/Won Signs/won.h
--
-player.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
-src/ThePongGame/Main Objects/scene.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+smallWall.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.h
 
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.h
 memory
 -
 ppgso/ppgso.h
 -
 src/ThePongGame/Main Objects/scene.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
 src/ThePongGame/Main Objects/object.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/object.h
-src/ThePongGame/Score/score_number.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/score_number.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
 
 shaders/diffuse_frag_glsl.h
 string

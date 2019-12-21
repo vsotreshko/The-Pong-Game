@@ -16,6 +16,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/data)
 
+
 # Use add_resources function to convert .glsl to a .cpp files which will be compiled into a separate static library
 include(add_resources)
 
@@ -126,7 +127,7 @@ add_executable(ThePongGame
         src/ThePongGame/Score/score_signs.h
         src/ThePongGame/Score/score_number.cpp
         src/ThePongGame/Score/score_number.h
-        src/ThePongGame/Score/left_score.cpp src/ThePongGame/Score/left_score.h src/ThePongGame/Score/right_score.cpp src/ThePongGame/Score/right_score.h)
+        src/ThePongGame/Score/left_score.cpp src/ThePongGame/Score/left_score.h src/ThePongGame/Score/right_score.cpp src/ThePongGame/Score/right_score.h "src/ThePongGame/Decoration Objects/start_screen.cpp" "src/ThePongGame/Decoration Objects/start_screen.h" "src/ThePongGame/Decoration Objects/background.cpp" "src/ThePongGame/Decoration Objects/background.h" src/ThePongGame/childBall.cpp src/ThePongGame/childBall.h "src/ThePongGame/Decoration Objects/wallBall.cpp" "src/ThePongGame/Decoration Objects/wallBall.h" "src/ThePongGame/Decoration Objects/wallBallChild.cpp" "src/ThePongGame/Decoration Objects/wallBallChild.h" src/ThePongGame/Table/smallWall.cpp src/ThePongGame/Table/smallWall.h)
 target_link_libraries(ThePongGame ppgso shaders)
 install(TARGETS ThePongGame DESTINATION .)
 

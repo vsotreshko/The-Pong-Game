@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/object.h
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp
+iostream
+-
+memory
+-
+map
+-
+list
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/camera.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/camera.h
+src/ThePongGame/Main Objects/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Table/playground.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Table/playground.h
+src/ThePongGame/Decoration Objects/ground.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Decoration Objects/ground.h
+src/ThePongGame/Table/border.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Table/border.h
+player.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+src/ThePongGame/Decoration Objects/wall.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Decoration Objects/wall.h
+ball.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
+src/ThePongGame/Score/score_signs.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/score_signs.h
+src/ThePongGame/Score/left_score.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/left_score.h
+src/ThePongGame/Score/right_score.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/right_score.h
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/object.h
+src/ThePongGame/Score/score_number.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/score_number.h
+

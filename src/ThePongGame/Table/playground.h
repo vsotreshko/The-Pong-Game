@@ -23,6 +23,8 @@ private:
     static std::vector<tinyobj::material_t> material;
     static std::map<std::string, int> material_map;
 
+    float time;
+
 public:
     constexpr const static float NET_HEIGHT = 0.6;
 

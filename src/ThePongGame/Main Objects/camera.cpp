@@ -1,6 +1,9 @@
 #include <glm/glm.hpp>
+#include <ppgso/ppgso.h>
 
 #include "camera.h"
+#include <shaders/texture_vert_glsl.h>
+#include <shaders/texture_frag_glsl.h>
 
 using namespace std;
 using namespace glm;
@@ -13,10 +16,19 @@ Camera::Camera(float fow, float ratio, float near, float far) {
     up = {0,1,0};
     back = {0,-2,-1.5};
     position = {0, -12, -5};
+
+    flag = false;
 }
 
 void Camera::update() {
-  viewMatrix = lookAt(position, position-back, up);
+    if (flag) {
+        float radius = 10.0f;
+        float camX = sin(glfwGetTime() * 0.5) * radius;
+        float camZ = cos(glfwGetTime() * 0.5) * radius;
+        viewMatrix = lookAt(vec3(camX, -12.0, camZ), back, up);
+    } else {
+        viewMatrix = lookAt(position, position-back, up);
+    }
 }
 
 glm::vec3 Camera::cast(float u, float v) {
@@ -44,6 +56,6 @@ void  Camera::cameraDEFAULT() {
 
 void  Camera::cameraUP() {
     up = {0,1,0};
-    back = {0,-2.71988,-37.0402};
+    back = {0,-3,-37};
     position = {0, 0, -15};
 }

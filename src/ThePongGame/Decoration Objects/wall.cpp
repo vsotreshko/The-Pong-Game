@@ -53,9 +53,9 @@ void Wall::render(Scene &scene) {
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
 
-    shader->setUniform("Ambient", vec3(material.data()->ambient[0], material.data()->ambient[1], material.data()->ambient[2]));
-    shader->setUniform("Diffuse", vec4(material.data()->diffuse[0], material.data()->diffuse[1], material.data()->diffuse[2], 1.0f));
-    shader->setUniform("Specular", vec3(material.data()->specular[0], material.data()->specular[1], material.data()->specular[2]));
+    shader->setUniform("Ambient", vec4(material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[1]));
+    shader->setUniform("Diffuse", vec4(material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1]));
+    shader->setUniform("Specular", vec4(material.data()->specular[1], material.data()->specular[1], material.data()->specular[1], material.data()->specular[1]));
     shader->setUniform("Shininess", (material.data()->shininess * 128));
 
     shader->setUniform("Texture", *texture);

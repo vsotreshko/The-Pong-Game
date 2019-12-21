@@ -24,6 +24,9 @@ unique_ptr<Shader> Ball::shader;
 map<std::string, int> Ball::material_map;
 vector<tinyobj::material_t> Ball::material;
 
+bool TOP_ball = false;
+bool BOTTOM_ball = true;
+
 Ball::Ball() {
     // Initialize static resources if needed
     if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
@@ -35,79 +38,99 @@ Ball::Ball() {
 
     this->scale*=0.5;
     this->position.z = -(this->scale.z / 2) - 1;
-//    this->position.z = -(this->scale.z / 2) - 0.01;
-//    this->position.y = -3;
 
-//    speed = {linearRand(-10.0f, 10.0f), linearRand(5.0f, 10.0f), 0.0f};
     speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 1.5f};
-//    speed = {0.0f,-3.0f,0.0f};
 
-//    //// Random start Y speed direction
-//    if(rand() % 2 == 0) {
-//        speed.y *= -1;
-//    }
+    if(TOP_ball){
+        position.y = 4;
+        speed.y *= -1;
+    }
+
+    if(BOTTOM_ball) {
+        position.y = -4;
+    }
+
+    isJumping = true;
 }
 
 bool Ball::update(Scene &scene, float dt) {
-    speed.z += dt * 3;
+    if (isJumping) {
+        generateModelMatrix();
 
-    // Animate position according to time
-    position += speed * dt;
-
-    for (auto &obj : scene.objects) {
-        if (obj.get() == this) continue;
-        auto player = dynamic_cast<Player *>(obj.get());
-        if (player) {
-            if (distance(position, player->position) <= player->scale.y) {
-                float dx = (player->position.x * player->scale.x) - (position.x * scale.x);
-                float dy = (player->position.y * player->scale.y) - (position.y * scale.y);
-
-                float angle = atan2(dy, dx);
-
-                speed.x = (5.0f * - sin(angle)) * player->acceleration;
-                speed.y = (5.0f * -sin(angle));
-                if(speed.z < 0) speed.z *= -1;
-            }
-
-            if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
-                player->score +=1;
-                if(player->bottom) {
-                    cout<<"Player TOP +1"<<endl;
-                    cout<<"Actual score:"<<player->score<<endl;
-                    auto right_score = dynamic_cast<Right_score *>(obj.get());
-                    right_score->updateNumber(player->score);
-                }
-                if(player->top) {
-                    cout<<"Player BOTTOM +1"<<endl;
-                    cout<<"Actual score:"<<player->score<<endl;
-                    auto left_score = dynamic_cast<Left_score *>(obj.get());
-                    left_score->updateNumber(player->score);
-                }
-                return false;
-            }
+        this->startJump(position);
+        isJumping = false;
+        return true;
+    } else {
+        if (!isJumping && this->position.z <= -1.5f) {
+            this->empltyKeyFrames();
         }
 
-        auto border = dynamic_cast<Border *>(obj.get());
-        if (border) {
-            if (distance(position.x, border->position.x) <= (scale.x)) {
-                speed.x *= (-1);
-            }
-        }
+        speed.z += dt * 4;
 
-        auto playground = dynamic_cast<Playground *>(obj.get());
-        if (playground) {
-            if (distance(position.z, playground->position.z) <= (scale.x)) {
-                speed.z *= (-1);
+        // Animate position according to time
+        position += speed * dt;
+
+
+        for (auto &obj : scene.objects) {
+            if (obj.get() == this) continue;
+            auto player = dynamic_cast<Player *>(obj.get());
+            if (player) {
+                if (distance(position, player->position) <= player->scale.y) {
+                    float dx = (player->position.x * player->scale.x) - (position.x * scale.x);
+                    float dy = (player->position.y * player->scale.y) - (position.y * scale.y);
+
+                    float angle = atan2(dy, dx);
+
+                    speed.x = (5.0f * -sin(angle)) * player->acceleration;
+                    speed.y = (5.0f * -sin(angle));
+                    if(speed.z < 0) speed.z *= -1;
+                }
+
+                if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
+                    player->score +=1;
+                    if(player->bottom) {
+                        cout<<"Player TOP +1"<<endl;
+                        cout<<"Actual score:"<<player->score<<endl;
+                        auto right_score = dynamic_cast<Right_score *>(obj.get());
+                        right_score->updateNumber(player->score);
+                        BOTTOM_ball = false;
+                        TOP_ball = true;
+                    }
+                    if(player->top) {
+                        cout<<"Player BOTTOM +1"<<endl;
+                        cout<<"Actual score:"<<player->score<<endl;
+                        auto left_score = dynamic_cast<Left_score *>(obj.get());
+                        left_score->updateNumber(player->score);
+                        BOTTOM_ball = true;
+                        TOP_ball = false;
+                    }
+                    return false;
+                }
             }
 
-            if ((distance(position.y, playground->position.y) < scale.x) &&
-                (distance(position.z, playground->position.z) < Playground::NET_HEIGHT)) {
-                speed.y *= (-1);
+            auto border = dynamic_cast<Border *>(obj.get());
+            if (border) {
+                if (distance(position.x, border->position.x) <= (scale.x)) {
+                    speed.x *= (-1);
+                }
+            }
+
+            auto playground = dynamic_cast<Playground *>(obj.get());
+            if (playground) {
+                if (distance(position.z, playground->position.z) <= (scale.x)) {
+                    speed.z *= (-1);
+                }
+
+                if ((distance(position.y, playground->position.y) < scale.x) &&
+                    (distance(position.z, playground->position.z) < Playground::NET_HEIGHT)) {
+                    speed.y *= (-1);
+                }
             }
         }
     }
 
     // Generate modelMatrix from position, rotation and scale
+    updateKeyFrame();
     generateModelMatrix();
     return true;
 }
@@ -125,13 +148,25 @@ void Ball::render(Scene &scene) {
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
 
-    shader->setUniform("Ambient", vec3(material.data()->ambient[0], material.data()->ambient[1], material.data()->ambient[2]));
-    shader->setUniform("Diffuse", vec4(material.data()->diffuse[0], material.data()->diffuse[1], material.data()->diffuse[2], 1.0f));
-    shader->setUniform("Specular", vec3(material.data()->specular[0], material.data()->specular[1], material.data()->specular[2]));
+    shader->setUniform("Ambient", vec4(material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[1]));
+    shader->setUniform("Diffuse", vec4(material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1]));
+    shader->setUniform("Specular", vec4(material.data()->specular[1], material.data()->specular[1], material.data()->specular[1], material.data()->specular[1]));
     shader->setUniform("Shininess", (material.data()->shininess * 128));
 
     shader->setUniform("Texture", *texture);
     mesh->render();
+}
+
+
+void Ball::startJump(glm::vec3 position) {
+//    float start_Z = position.z;
+    float start_Z = -1.0f;
+
+    addKeyFrame(20, this->rotation, this->scale, {position.x, position.y, 0.0f - scale.x/2});
+    addKeyFrame(20, this->rotation, this->scale, {position.x, position.y, start_Z});
+
+    addKeyFrame(30, this->rotation, this->scale, {position.x, position.y, 0.0f - scale.x/2});
+    addKeyFrame(30, this->rotation, this->scale, {position.x, position.y, start_Z * 1.5f});
 }
 
 

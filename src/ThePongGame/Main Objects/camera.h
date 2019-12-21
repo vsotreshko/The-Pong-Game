@@ -18,6 +18,8 @@ public:
   glm::mat4 viewMatrix;
   glm::mat4 projectionMatrix;
 
+  bool flag;
+
   /*!
    * Create new Camera that will generate viewMatrix and projectionMatrix based on its position, up and back vectors
    * @param fow - Field of view in degrees

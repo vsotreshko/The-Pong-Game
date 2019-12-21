@@ -11,10 +11,12 @@
 
 #include <iostream>
 #include <memory>
-#include <map>
 #include <list>
 
 #include <ppgso/ppgso.h>
+#include <src/ThePongGame/Decoration Objects/background.h>
+#include <cmake-build-debug/shaders/texture_vert_glsl.h>
+#include <cmake-build-debug/shaders/texture_frag_glsl.h>
 
 #include "src/ThePongGame/Main Objects/camera.h"
 #include "src/ThePongGame/Main Objects/scene.h"
@@ -27,6 +29,11 @@
 #include "src/ThePongGame/Score/score_signs.h"
 #include "src/ThePongGame/Score/left_score.h"
 #include "src/ThePongGame/Score/right_score.h"
+#include "src/ThePongGame/Decoration Objects/start_screen.h"
+#include <glm/gtc/random.hpp>
+#include <src/ThePongGame/Decoration Objects/wallBall.h>
+#include <src/ThePongGame/Table/smallWall.h>
+
 
 using namespace std;
 using namespace glm;
@@ -37,51 +44,33 @@ const unsigned int SIZE = 1000;
 class SceneWindow : public Window {
 private:
     Scene scene;
+    Shader program = {texture_vert_glsl, texture_frag_glsl};
 
     void initScene() {
         scene.objects.clear();
 
-        //// Create a camera
-        auto camera = make_unique<Camera>(80.0f, 1.0f, 0.1f, 100.0f);
+        auto camera = make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
+        camera->position.z = -17.82f;
+        camera->position.y = -0.060f;
+        camera->position.x = 77.220f;
+
+        camera->back.y = -2.71988f;
+        camera->back.z = -37.0402f;
+
+        camera->up.y = 1.0f;
         scene.camera = move(camera);
 
-        //// Add SCORE to the scene
-        auto score_signs = make_unique<ScoreSigns>();
-        scene.objects.push_back(move(score_signs));
+        auto background = make_unique<Background>();
+        background->position.x = 0.0f;
+        background->position.y = 0.0f;
+        background->position.z = 0.0f;
+        scene.objects.push_back(move(background));
 
-        auto score_left = make_unique<Left_score>();
-        scene.objects.push_back(move(score_left));
-
-        auto score_right = make_unique<Right_score>();
-        scene.objects.push_back(move(score_right));
-
-        //// Add wall to the scene
-        auto wall = make_unique<Wall>();
-        scene.objects.push_back(move(wall));
-
-        //// Add BOTTOM player to the scene (position: 0 - TOP, 1 - BOTTOM)
-        auto player_top = make_unique<Player>(0, 1);
-        scene.objects.push_back(move(player_top));
-
-        //// Add TOP player to the scene
-        auto player_bottom = make_unique<Player>(1, -1);
-        scene.objects.push_back(move(player_bottom));
-
-        //// Add playground to the scene
-        auto playground = make_unique<Playground>();
-        scene.objects.push_back(move(playground));
-
-        //// Add ground to the scene
-        auto ground = make_unique<Ground>();
-        scene.objects.push_back(move(ground));
-
-        //// Add LEFT border to the scene
-        auto border_left = make_unique<Border>(5.75, 0);
-        scene.objects.push_back(move(border_left));
-
-        //// Add LEFT border to the scene
-        auto border_right = make_unique<Border>(-5.75, 0);
-        scene.objects.push_back(move(border_right));
+        auto start_screen = make_unique<Start_screen>();
+        start_screen->position.x = 76.99f;
+        start_screen->position.y = 1.29f;
+        start_screen->position.z = -5.0f;
+        scene.objects.push_back(move(start_screen));
     }
 
 public:
@@ -104,15 +93,13 @@ public:
         initScene();
     }
 
-    /*!
-     * Handles pressed key when the window is focused
-     * @param key Key code of the key being pressed/released
-     * @param scanCode Scan code of the key being pressed/released
-     * @param action Action indicating the key state change
-     * @param mods Additional modifiers to consider
-     */
     void onKey(int key, int scanCode, int action, int mods) override {
         scene.keyboard[key] = action;
+
+        //// Add ball to the Game
+        if (key == GLFW_KEY_ENTER && action == GLFW_PRESS) {
+            initGameScene();
+        }
 
         //// Add ball to the Game
         if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
@@ -125,9 +112,14 @@ public:
             animate = !animate;
         }
 
-        /*!
+        /*
         * Camera
         */
+        //// Rotate camera
+        if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_3]){
+            scene.camera->flag = !scene.camera->flag;
+        }
+
         //// Change camera position on UP
         if(scene.keyboard[GLFW_KEY_C] && scene.keyboard[GLFW_KEY_2]){
             scene.camera->cameraUP();
@@ -208,56 +200,10 @@ public:
         }
     }
 
-    /*!
-     * Handle cursor position changes
-     * @param cursorX Mouse horizontal position in window coordinates
-     * @param cursorY Mouse vertical position in window coordinates
-     */
-    void onCursorPos(double cursorX, double cursorY) override {
-        scene.cursor.x = cursorX;
-        scene.cursor.y = cursorY;
-    }
-
-    /*!
-     * Handle cursor buttons
-     * @param button Mouse button being manipulated
-     * @param action Mouse bu
-     * @param mods
-     */
-    void onMouseButton(int button, int action, int mods) override {
-        if(button == GLFW_MOUSE_BUTTON_LEFT) {
-            scene.cursor.left = action == GLFW_PRESS;
-
-            if (scene.cursor.left) {
-                // Convert pixel coordinates to Screen coordinates
-                float u = (scene.cursor.x / width - 0.5f) * 2.0f;
-                float v = - (scene.cursor.y / height - 0.5f) * 2.0f;
-
-                // Get mouse pick vector in world coordinates
-                auto direction = scene.camera->cast(u, v);
-                auto position = scene.camera->position;
-
-                // Get all objects in scene intersected by ray
-                auto picked = scene.intersect(position, direction);
-
-                // Go through all objects that have been picked
-                for (auto &obj: picked) {
-                    // Pass on the click event
-                    obj->onClick(scene);
-                }
-            }
-        }
-        if(button == GLFW_MOUSE_BUTTON_RIGHT) {
-            scene.cursor.right = action == GLFW_PRESS;
-        }
-    }
-
-    /*!
-     * Window update implementation that will be called automatically from pollEvents
-     */
     void onIdle() override {
         // Track time
         static auto time = (float) glfwGetTime();
+
 
         // Compute time delta
         float dt = animate ? (float) glfwGetTime() - time : 0;
@@ -265,13 +211,66 @@ public:
         time = (float) glfwGetTime();
 
         // Set gray background
-        glClearColor(.5f, .5f, .5f, 0);
+        glClearColor(0.5f, 0.5f, 0.5f, 0);
         // Clear depth and color buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+        glEnable ( GL_LIGHTING ) ;
+        glEnable ( GL_LIGHT0 ) ;
 
         // Update and render all objects
         scene.update(dt);
         scene.render();
+    }
+
+    void initGameScene () {
+        scene.objects.clear();
+        animate = true;
+
+        //// Create a camera
+        auto camera = make_unique<Camera>(80.0f, 1.0f, 0.1f, 100.0f);
+        scene.camera = move(camera);
+
+        //// Add SCORE to the scene
+        auto score_signs = make_unique<ScoreSigns>();
+        scene.objects.push_back(move(score_signs));
+
+        auto score_left = make_unique<Left_score>();
+        scene.objects.push_back(move(score_left));
+
+        auto score_right = make_unique<Right_score>();
+        scene.objects.push_back(move(score_right));
+
+        //// Add wall to the scene
+        auto wall = make_unique<Wall>();
+        scene.objects.push_back(move(wall));
+
+        //// Add BOTTOM player to the scene (position: 0 - TOP, 1 - BOTTOM)
+        auto player_top = make_unique<Player>(0, 1);
+        scene.objects.push_back(move(player_top));
+
+        //// Add TOP player to the scene
+        auto player_bottom = make_unique<Player>(1, -1);
+        scene.objects.push_back(move(player_bottom));
+
+        //// Add playground to the scene
+        auto playground = make_unique<Playground>();
+        scene.objects.push_back(move(playground));
+
+        //// Add ground to the scene
+        auto ground = make_unique<Ground>();
+        scene.objects.push_back(move(ground));
+
+        //// Add LEFT border to the scene
+        auto border_left = make_unique<Border>(5.75, 0);
+        scene.objects.push_back(move(border_left));
+
+        //// Add LEFT border to the scene
+        auto border_right = make_unique<Border>(-5.75, 0);
+        scene.objects.push_back(move(border_right));
+
+        auto wallBall = make_unique<WallBall>();
+        scene.objects.push_back(move(wallBall));
     }
 };
 

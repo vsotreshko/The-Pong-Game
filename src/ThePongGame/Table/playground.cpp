@@ -3,6 +3,7 @@
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 #include "playground.h"
+#include "smallWall.h"
 
 using namespace std;
 using namespace glm;
@@ -27,15 +28,24 @@ Playground::Playground() {
 }
 
 bool Playground::update(Scene &scene, float dt) {
+    time += dt;
+
+    if(time > 10.0f) {
+        time = 0.0f;
+
+        float randomPosition = linearRand(-7.0f, 7.0f);
+        auto smallWall = make_unique<SmallWall>(randomPosition);
+        scene.objects.push_back(move(smallWall));
+    }
 
     // Generate modelMatrix from position, rotation and scale
     generateModelMatrix();
-
     return true;
 }
 
 
 void Playground::render(Scene &scene) {
+
     shader->use();
     shader->setUniform("LightDirection", scene.lightDirection);
     shader->setUniform("LightColor", scene.lightColor);
@@ -47,9 +57,9 @@ void Playground::render(Scene &scene) {
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
 
-    shader->setUniform("Ambient", vec3(material.data()->ambient[0], material.data()->ambient[1], material.data()->ambient[2]));
-    shader->setUniform("Diffuse", vec4(material.data()->diffuse[0], material.data()->diffuse[1], material.data()->diffuse[2], 1.0f));
-    shader->setUniform("Specular", vec3(material.data()->specular[0], material.data()->specular[1], material.data()->specular[2]));
+    shader->setUniform("Ambient", vec4(material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[0], material.data()->ambient[1]));
+    shader->setUniform("Diffuse", vec4(material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1], material.data()->diffuse[1]));
+    shader->setUniform("Specular", vec4(material.data()->specular[1], material.data()->specular[1], material.data()->specular[1], material.data()->specular[1]));
     shader->setUniform("Shininess", (material.data()->shininess * 128));
 
     shader->setUniform("Texture", *texture);
