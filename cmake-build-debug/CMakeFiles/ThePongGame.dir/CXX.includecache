@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../cmake-build-debug/shaders/texture_frag_glsl.h
+string
+-
+
+../cmake-build-debug/shaders/texture_vert_glsl.h
+string
+-
+
 ../ppgso/image.h
 string
 -
@@ -114,6 +122,58 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
+../src/ThePongGame/Decoration Objects/background.h
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/object.h
+-
+
+../src/ThePongGame/Decoration Objects/ground.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Decoration Objects/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Decoration Objects/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Decoration Objects/start_screen.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/object.h
+-
+src/ThePongGame/Main Objects/scene.h
+-
+
+../src/ThePongGame/Decoration Objects/wall.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Decoration Objects/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Decoration Objects/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Decoration Objects/wallBall.h
+memory
+-
+ppgso/ppgso.h
+-
+wallBallChild.h
+../src/ThePongGame/Decoration Objects/wallBallChild.h
+
+../src/ThePongGame/Decoration Objects/wallBallChild.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+-
+
 ../src/ThePongGame/Main Objects/camera.h
 memory
 -
@@ -146,6 +206,26 @@ object.h
 camera.h
 ../src/ThePongGame/Main Objects/camera.h
 
+../src/ThePongGame/Score/left_score.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Score/right_score.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/object.h
+
 ../src/ThePongGame/Score/score_number.h
 memory
 -
@@ -156,29 +236,125 @@ src/ThePongGame/Main Objects/scene.h
 src/ThePongGame/Main Objects/object.h
 ../src/ThePongGame/Score/src/ThePongGame/Main Objects/object.h
 
-../src/ThePongGame/Won Signs/won.h
+../src/ThePongGame/Score/score_signs.h
 memory
 -
 ppgso/ppgso.h
 -
 src/ThePongGame/Main Objects/scene.h
-../src/ThePongGame/Won Signs/src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/scene.h
 src/ThePongGame/Main Objects/object.h
-../src/ThePongGame/Won Signs/src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Score/src/ThePongGame/Main Objects/object.h
 
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp
-glm/gtc/random.hpp
+../src/ThePongGame/Table/border.h
+memory
 -
-shaders/diffuse_vert_glsl.h
+ppgso/ppgso.h
 -
-shaders/diffuse_frag_glsl.h
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Table/playground.h
+memory
 -
-src/ThePongGame/Won Signs/won.h
+ppgso/ppgso.h
 -
-player.h
-/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Table/smallWall.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Table/windLeft.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
+
+../src/ThePongGame/Table/windRight.h
+memory
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Main Objects/scene.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+../src/ThePongGame/Table/src/ThePongGame/Main Objects/object.h
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
+memory
+-
+ppgso/ppgso.h
+-
 src/ThePongGame/Main Objects/scene.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Main Objects/object.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/object.h
+
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp
+iostream
+-
+memory
+-
+list
+-
+ppgso/ppgso.h
+-
+src/ThePongGame/Decoration Objects/background.h
+-
+cmake-build-debug/shaders/texture_vert_glsl.h
+-
+cmake-build-debug/shaders/texture_frag_glsl.h
+-
+src/ThePongGame/Main Objects/camera.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/camera.h
+src/ThePongGame/Main Objects/scene.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/scene.h
+src/ThePongGame/Table/playground.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Table/playground.h
+src/ThePongGame/Decoration Objects/ground.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Decoration Objects/ground.h
+src/ThePongGame/Table/border.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Table/border.h
+player.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
+src/ThePongGame/Decoration Objects/wall.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Decoration Objects/wall.h
+ball.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
+src/ThePongGame/Score/score_signs.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/score_signs.h
+src/ThePongGame/Score/left_score.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/left_score.h
+src/ThePongGame/Score/right_score.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/right_score.h
+src/ThePongGame/Decoration Objects/start_screen.h
+/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Decoration Objects/start_screen.h
+glm/gtc/random.hpp
+-
+src/ThePongGame/Decoration Objects/wallBall.h
+-
+src/ThePongGame/Table/smallWall.h
+-
+src/ThePongGame/Table/windRight.h
+-
+src/ThePongGame/Table/windLeft.h
+-
 
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
 memory
@@ -191,12 +367,4 @@ src/ThePongGame/Main Objects/object.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Main Objects/object.h
 src/ThePongGame/Score/score_number.h
 /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/src/ThePongGame/Score/score_number.h
-
-shaders/diffuse_frag_glsl.h
-string
--
-
-shaders/diffuse_vert_glsl.h
-string
--
 

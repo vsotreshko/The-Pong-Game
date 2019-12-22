@@ -69,8 +69,8 @@ private:
         scene.objects.push_back(move(background));
 
         auto start_screen = make_unique<Start_screen>();
-        start_screen->position.x = 76.99f;
-        start_screen->position.y = 1.29f;
+        start_screen->position.x = 77.0f;
+        start_screen->position.y = 1.5f;
         start_screen->position.z = -5.0f;
         scene.objects.push_back(move(start_screen));
     }
