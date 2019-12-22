@@ -183,9 +183,9 @@ void Player::render(Scene &scene) {
 }
 
 void Player::endGame(Scene &scene, int player) {
-    scene.camera->cameraUP();
-    auto won = make_unique<Won>(player);
-    scene.objects.push_back(move(won));
+//    scene.camera->cameraUP();
+//    auto won = make_unique<Won>(player);
+//    scene.objects.push_back(move(won));
 }
 
 

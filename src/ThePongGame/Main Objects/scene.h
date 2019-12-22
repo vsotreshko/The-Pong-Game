@@ -47,16 +47,19 @@ class Scene {
     glm::vec3 lightDirection = normalize(glm::vec3{-0.5f, -0.82f, -0.57f});
     glm::vec3 lightDirection2 = normalize(glm::vec3{0.5f, -0.82f, -0.57f});
 
-    glm::vec3 lightColor = glm::vec3(0.6f, 0.6f, 0.6f);
+    glm::vec3 lightColor = glm::vec3(1.0f, 1.0f, 1.0f);
     glm::vec3 lightColor2 = lightColor;
 
-    glm::vec3 ambientLightColor = glm::vec3(0.2, 0.2, 0.2);
+    glm::vec3 ambientLightColor = glm::vec3(0.05f, 0.05f, 0.05f);
 
     // Store cursor state
     struct {
       double x, y;
       bool left, right;
     } cursor;
+
+
+
 };
 
 #endif // _PPGSO_SCENE_H

@@ -20,11 +20,11 @@ void main() {
   // Copy the input to the fragment shader
   texCoord = TexCoord;
 
-    worldPosition = vec3(ModelMatrix * vec4(Position, 1.0)).xyz;
+   worldPosition = vec3(ModelMatrix * vec4(Position, 1.0f)).xyz;
 
   // Normal in world coordinates
   normal = normalize(ModelMatrix * vec4(Normal, 0.0f));
 
   // Calculate the final position on screen
-  gl_Position = ProjectionMatrix * ViewMatrix * ModelMatrix * vec4(Position, 1.0);
+  gl_Position = ProjectionMatrix * ViewMatrix * ModelMatrix * vec4(Position, 1.0f);
 }

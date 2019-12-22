@@ -204,19 +204,15 @@ public:
         // Track time
         static auto time = (float) glfwGetTime();
 
-
         // Compute time delta
         float dt = animate ? (float) glfwGetTime() - time : 0;
 
         time = (float) glfwGetTime();
 
-        // Set gray background
-        glClearColor(0.5f, 0.5f, 0.5f, 0);
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+
         // Clear depth and color buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
-        glEnable ( GL_LIGHTING ) ;
-        glEnable ( GL_LIGHT0 ) ;
 
         // Update and render all objects
         scene.update(dt);

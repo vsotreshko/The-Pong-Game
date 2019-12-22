@@ -19,7 +19,7 @@ vector<tinyobj::material_t> SmallWall::material;
 SmallWall::SmallWall(float position) {
     // Initialize static resources if needed
     if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-    if (!texture) texture = make_unique<Texture>(image::loadBMP("white.bmp"));
+    if (!texture) texture = make_unique<Texture>(image::loadBMP("wood.bmp"));
     if (!mesh) mesh = make_unique<Mesh>("uvmappedcube.obj");
 
     ifstream mtl("uvmappedcube.mtl", std::ifstream::binary);

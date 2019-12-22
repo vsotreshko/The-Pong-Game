@@ -22,7 +22,7 @@ Camera::Camera(float fow, float ratio, float near, float far) {
 
 void Camera::update() {
     if (flag) {
-        float radius = 10.0f;
+        float radius = 5.0f;
         float camX = sin(glfwGetTime() * 0.5) * radius;
         float camZ = cos(glfwGetTime() * 0.5) * radius;
         viewMatrix = lookAt(vec3(camX, -12.0, camZ), back, up);

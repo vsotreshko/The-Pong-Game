@@ -272,6 +272,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o
  ../src/ThePongGame/Score/score_number.h
  ../src/ThePongGame/Table/border.h
  ../src/ThePongGame/Table/playground.h
+ ../src/ThePongGame/Table/smallWall.h
  ../src/ThePongGame/Won Signs/won.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h

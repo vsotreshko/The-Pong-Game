@@ -4,6 +4,7 @@
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 #include <src/ThePongGame/Won Signs/won.h>
+#include <src/ThePongGame/Table/smallWall.h>
 #include "ball.h"
 #include "player.h"
 #include "src/ThePongGame/Table/border.h"
@@ -37,9 +38,9 @@ Ball::Ball() {
     tinyobj::LoadMtl(this->material_map, this->material, mtl);
 
     this->scale*=0.5;
-    this->position.z = -(this->scale.z / 2) - 1;
+    this->position.z = -(this->scale.z / 2) - 2;
 
-    speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 1.5f};
+    speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 0.5f};
 
     if(TOP_ball){
         position.y = 4;
@@ -49,88 +50,87 @@ Ball::Ball() {
     if(BOTTOM_ball) {
         position.y = -4;
     }
-
-    isJumping = true;
 }
 
 bool Ball::update(Scene &scene, float dt) {
-    if (isJumping) {
-        generateModelMatrix();
+    speed.z += dt * 3;
 
-        this->startJump(position);
-        isJumping = false;
-        return true;
-    } else {
-        if (!isJumping && this->position.z <= -1.5f) {
-            this->empltyKeyFrames();
+    // Animate position according to time
+    position += speed * dt;
+
+
+    for (auto &obj : scene.objects) {
+        if (obj.get() == this) continue;
+        auto player = dynamic_cast<Player *>(obj.get());
+        if (player) {
+            if (distance(position.x, player->position.x) <= player->scale.x + (scale.x / 2) &&
+                distance(position.y, player->position.y) <= 0.1f + (scale.x / 2) &&
+                distance(position.z, player->position.z) <= 0.5f + (scale.x / 2)){
+
+                float dx = (player->position.x * player->scale.x) - (position.x * scale.x);
+                float dy = (player->position.y * player->scale.y) - (position.y * scale.y);
+
+                float angle = atan2(dy, dx);
+
+                speed.x = (3.0f * -sin(angle)) * player->acceleration;
+                speed.y = (3.0f * -sin(angle));
+                if(speed.z < 0) speed.z *= -1;
+            }
+
+            if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
+                player->score +=1;
+                if(player->bottom) {
+                    cout<<"Player TOP +1"<<endl;
+                    cout<<"Actual score:"<<player->score<<endl;
+                    auto right_score = dynamic_cast<Right_score *>(obj.get());
+                    right_score->updateNumber(player->score);
+                    BOTTOM_ball = false;
+                    TOP_ball = true;
+                }
+                if(player->top) {
+                    cout<<"Player BOTTOM +1"<<endl;
+                    cout<<"Actual score:"<<player->score<<endl;
+                    auto left_score = dynamic_cast<Left_score *>(obj.get());
+                    left_score->updateNumber(player->score);
+                    BOTTOM_ball = true;
+                    TOP_ball = false;
+                }
+                return false;
+            }
         }
 
-        speed.z += dt * 4;
-
-        // Animate position according to time
-        position += speed * dt;
-
-
-        for (auto &obj : scene.objects) {
-            if (obj.get() == this) continue;
-            auto player = dynamic_cast<Player *>(obj.get());
-            if (player) {
-                if (distance(position, player->position) <= player->scale.y) {
-                    float dx = (player->position.x * player->scale.x) - (position.x * scale.x);
-                    float dy = (player->position.y * player->scale.y) - (position.y * scale.y);
-
-                    float angle = atan2(dy, dx);
-
-                    speed.x = (5.0f * -sin(angle)) * player->acceleration;
-                    speed.y = (5.0f * -sin(angle));
-                    if(speed.z < 0) speed.z *= -1;
-                }
-
-                if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
-                    player->score +=1;
-                    if(player->bottom) {
-                        cout<<"Player TOP +1"<<endl;
-                        cout<<"Actual score:"<<player->score<<endl;
-                        auto right_score = dynamic_cast<Right_score *>(obj.get());
-                        right_score->updateNumber(player->score);
-                        BOTTOM_ball = false;
-                        TOP_ball = true;
-                    }
-                    if(player->top) {
-                        cout<<"Player BOTTOM +1"<<endl;
-                        cout<<"Actual score:"<<player->score<<endl;
-                        auto left_score = dynamic_cast<Left_score *>(obj.get());
-                        left_score->updateNumber(player->score);
-                        BOTTOM_ball = true;
-                        TOP_ball = false;
-                    }
-                    return false;
-                }
+        auto border = dynamic_cast<Border *>(obj.get());
+        if (border) {
+            if (distance(position.x, border->position.x) <= scale.x &&
+                distance(position.z, border->position.z) <= scale.z/2 + border->scale.z) {
+                speed.x *= (-1);
+                speed.z *= (-1);
             }
 
-            auto border = dynamic_cast<Border *>(obj.get());
-            if (border) {
-                if (distance(position.x, border->position.x) <= (scale.x)) {
-                    speed.x *= (-1);
-                }
+        }
+
+        auto playground = dynamic_cast<Playground *>(obj.get());
+        if (playground) {
+            if (distance(position.z, playground->position.z) <= (scale.z / 2)) {
+                speed.z *= (-1);
             }
 
-            auto playground = dynamic_cast<Playground *>(obj.get());
-            if (playground) {
-                if (distance(position.z, playground->position.z) <= (scale.x)) {
-                    speed.z *= (-1);
-                }
+            if ((distance(position.y, playground->position.y) <= (scale.x / 2)) &&
+                (distance(position.z, playground->position.z) <= Playground::NET_HEIGHT +  (scale.x / 2))) {
+                speed.y *= (-1);
+            }
+        }
 
-                if ((distance(position.y, playground->position.y) < scale.x) &&
-                    (distance(position.z, playground->position.z) < Playground::NET_HEIGHT)) {
-                    speed.y *= (-1);
-                }
+        auto smallWall = dynamic_cast<SmallWall *>(obj.get());
+        if (smallWall) {
+            if (distance(position.y, smallWall->position.y) <= (scale.x / 2) &&
+                distance(position.x, smallWall->position.x) <= smallWall->scale.x){
+                speed.y *= (-1);
             }
         }
     }
 
     // Generate modelMatrix from position, rotation and scale
-    updateKeyFrame();
     generateModelMatrix();
     return true;
 }
@@ -156,17 +156,4 @@ void Ball::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
     mesh->render();
 }
-
-
-void Ball::startJump(glm::vec3 position) {
-//    float start_Z = position.z;
-    float start_Z = -1.0f;
-
-    addKeyFrame(20, this->rotation, this->scale, {position.x, position.y, 0.0f - scale.x/2});
-    addKeyFrame(20, this->rotation, this->scale, {position.x, position.y, start_Z});
-
-    addKeyFrame(30, this->rotation, this->scale, {position.x, position.y, 0.0f - scale.x/2});
-    addKeyFrame(30, this->rotation, this->scale, {position.x, position.y, start_Z * 1.5f});
-}
-
 
