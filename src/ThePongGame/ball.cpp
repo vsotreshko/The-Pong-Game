@@ -42,7 +42,8 @@ Ball::Ball() {
     this->scale*=0.5;
     this->position.z = -(this->scale.z / 2) - 2;
 
-    speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 0.5f};
+//    speed = {linearRand(-5.0f, 5.0f), linearRand(5.0f, 7.0f), 0.0f};
+    speed = {linearRand(-4.0f, 4.0f), linearRand(7.0f, 12.0f), 0.0f};
 
     if(TOP_ball){
         position.y = 4;
@@ -55,7 +56,7 @@ Ball::Ball() {
 }
 
 bool Ball::update(Scene &scene, float dt) {
-    vec3 gravitation = {0.0f, 0.0f, 0.05f};
+    vec3 gravitation = {0.0f, 0.0f, 0.3f};
     speed += gravitation;
 
     // Animate position according to time
@@ -77,8 +78,7 @@ bool Ball::update(Scene &scene, float dt) {
 
         auto player = dynamic_cast<Player *>(obj.get());
         if (player) {
-            if (distance(position.x, player->position.x) <= player->scale.x + (scale.x / 2) &&
-                distance(position.y, player->position.y) <= 0.1f + (scale.x / 2) &&
+            if (distance(position.y, player->position.y) <= 0.1f + (scale.x / 2) &&
                 distance(position.z, player->position.z) <= 0.5f + (scale.x / 2)){
 
                 float dx = (player->position.x * player->scale.x) - (position.x * scale.x);
@@ -87,11 +87,11 @@ bool Ball::update(Scene &scene, float dt) {
                 float angle = atan2(dy, dx);
 
                 speed.x = (3.0f * -sin(angle)) * player->acceleration;
-                speed.y = (3.0f * -sin(angle));
-                if(speed.z < 0) speed.z *= -1;
+                speed.y = (3.0f * -sin(angle)) * player->acceleration;
+                speed.z *= -1;
             }
 
-            if ((position.y > 8 && player->top) || (position.y < -8 && player->bottom)) {
+            if ((position.y > 10 && player->top) || (position.y < -10 && player->bottom)) {
                 player->score +=1;
                 if(player->bottom) {
                     cout<<"Player TOP +1"<<endl;
@@ -133,6 +133,7 @@ bool Ball::update(Scene &scene, float dt) {
                 (distance(position.z, playground->position.z) <= Playground::NET_HEIGHT +  (scale.x / 2))) {
                 speed.y *= (-1);
             }
+
         }
 
         auto smallWall = dynamic_cast<SmallWall *>(obj.get());
@@ -144,7 +145,6 @@ bool Ball::update(Scene &scene, float dt) {
         }
     }
 
-    // Generate modelMatrix from position, rotation and scale
     generateModelMatrix();
     return true;
 }

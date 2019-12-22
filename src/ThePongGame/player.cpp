@@ -21,13 +21,14 @@ map<std::string, int> Player::material_map;
 vector<tinyobj::material_t> Player::material;
 
 Player::Player(int position, int moves_) {
-    // Initialize static resources if needed
     if (!shader) shader = make_unique<Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
     if (!texture) texture = make_unique<Texture>(image::loadBMP("player_pong.bmp"));
     if (!mesh) mesh = make_unique<Mesh>("player_pong.obj");
 
     ifstream mtl("player_pong.mtl", std::ifstream::binary);
     tinyobj::LoadMtl(this->material_map, this->material, mtl);
+
+    score = 0;
 
     bottom = false;
     top = false;
@@ -42,8 +43,7 @@ Player::Player(int position, int moves_) {
         bottom = true;
     }
     turned = false;
-
-    score = 0;
+    acceleration = 1.5f;
 }
 
 bool Player::update(Scene &scene, float dt) {
@@ -83,7 +83,7 @@ bool Player::update(Scene &scene, float dt) {
                 position.x -= 10 * dt * this->acceleration;
                     position.x -= SPEED;
                 } else {
-                     this->acceleration = 1.2;
+                     this->acceleration = 1.5;
                 }
             } else
                 //// MOVE UP
