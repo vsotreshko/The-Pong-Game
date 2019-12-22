@@ -6,12 +6,6 @@
 #include "src/ThePongGame/Main Objects/scene.h"
 #include "src/ThePongGame/Main Objects/object.h"
 
-/*!
- * Simple asteroid object
- * This sphere object represents an instance of mesh geometry
- * It initializes and loads all resources only once
- * It will move down along the Y axis and self delete when reaching below -10
- */
 class ScoreNumber final : public Object {
 private:
     // Static resources (Shared between instances)
@@ -24,20 +18,10 @@ private:
     static std::map<std::string, int> material_map;
 
 public:
+    ScoreNumber();
 
     void updateNumber(int number);
 
-    /*!
-     * Create new asteroid
-     */
-    ScoreNumber();
-
-    /*!
-     * Update asteroid
-     * @param scene Scene to interact with
-     * @param dt Time delta for animation purposes
-     * @return
-     */
     bool update(Scene &scene, float dt) override;
 
     /*!

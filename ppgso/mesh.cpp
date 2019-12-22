@@ -67,7 +67,7 @@ Mesh::Mesh(const string &obj_file) {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, shape.mesh.indices.size() * sizeof(unsigned int), shape.mesh.indices.data(), GL_STATIC_DRAW);
     buffer.size = (GLsizei) shape.mesh.indices.size();
 
-    // Copy it to the end of the buffers vector
+    // Copy it to the end of the buffers childBalls
     buffers.push_back(buffer);
   }
 }

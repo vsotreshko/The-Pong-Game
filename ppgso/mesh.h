@@ -33,7 +33,7 @@ namespace ppgso {
      * The shader program passed to the object will be bound to the geometry as follows:
      * vec3 Position - Vertex position, position 0
      * vec2 TexCoord - Texture coordinate, position 1
-     * vec3 Normal - Normal vector, position 2
+     * vec3 Normal - Normal childBalls, position 2
      *
      * @param obj - File path to the obj file to load.
      */

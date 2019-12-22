@@ -28,8 +28,11 @@ Border::Border(float position_X, float position_Y) {
     this->position.x = position_X;
     this->position.y = position_Y;
     this->position.z = 0;
-    this->scale.y = static_cast<float>(6);
     this->scale.x = static_cast<float>(0.25);
+    this->scale.y = static_cast<float>(6);
+    this->scale.z = static_cast<float>(2);
+
+
 }
 
 bool Border::update(Scene &scene, float dt) {

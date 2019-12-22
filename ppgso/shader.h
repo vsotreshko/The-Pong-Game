@@ -59,7 +59,7 @@ namespace ppgso {
     void setUniform(const std::string &name, float value) const;
 
     /*!
-     * Set a vector as an input for the shader program variable "name"
+     * Set a childBalls as an input for the shader program variable "name"
      *
      * @param name - Name of the shader program uniform input variable.
      * @param vector - Vector to set input to.
@@ -67,7 +67,7 @@ namespace ppgso {
     void setUniform(const std::string &name, glm::vec2 vector) const;
 
     /*!
-     * Set a vector as an input for the shader program variable "name"
+     * Set a childBalls as an input for the shader program variable "name"
      *
      * @param name - Name of the shader program uniform input variable.
      * @param vector - Vector to set input to.
@@ -75,7 +75,7 @@ namespace ppgso {
     void setUniform(const std::string &name, glm::vec3 vector) const;
 
     /*!
-     * Set a vector as an input for the shader program variable "name"
+     * Set a childBalls as an input for the shader program variable "name"
      *
      * @param name - Name of the shader program uniform input variable.
      * @param vector - Vector to set input to.

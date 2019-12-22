@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,43 +59,43 @@ CMAKE_BINARY_DIR = /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-bui
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/99/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -106,7 +106,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/99/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -1059,6 +1059,60 @@ src/ThePongGame/Table/smallWall.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.s
 .PHONY : src/ThePongGame/Table/smallWall.cpp.s
 
+src/ThePongGame/Table/windLeft.o: src/ThePongGame/Table/windLeft.cpp.o
+
+.PHONY : src/ThePongGame/Table/windLeft.o
+
+# target to build an object file
+src/ThePongGame/Table/windLeft.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o
+.PHONY : src/ThePongGame/Table/windLeft.cpp.o
+
+src/ThePongGame/Table/windLeft.i: src/ThePongGame/Table/windLeft.cpp.i
+
+.PHONY : src/ThePongGame/Table/windLeft.i
+
+# target to preprocess a source file
+src/ThePongGame/Table/windLeft.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.i
+.PHONY : src/ThePongGame/Table/windLeft.cpp.i
+
+src/ThePongGame/Table/windLeft.s: src/ThePongGame/Table/windLeft.cpp.s
+
+.PHONY : src/ThePongGame/Table/windLeft.s
+
+# target to generate assembly for a file
+src/ThePongGame/Table/windLeft.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.s
+.PHONY : src/ThePongGame/Table/windLeft.cpp.s
+
+src/ThePongGame/Table/windRight.o: src/ThePongGame/Table/windRight.cpp.o
+
+.PHONY : src/ThePongGame/Table/windRight.o
+
+# target to build an object file
+src/ThePongGame/Table/windRight.cpp.o:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o
+.PHONY : src/ThePongGame/Table/windRight.cpp.o
+
+src/ThePongGame/Table/windRight.i: src/ThePongGame/Table/windRight.cpp.i
+
+.PHONY : src/ThePongGame/Table/windRight.i
+
+# target to preprocess a source file
+src/ThePongGame/Table/windRight.cpp.i:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.i
+.PHONY : src/ThePongGame/Table/windRight.cpp.i
+
+src/ThePongGame/Table/windRight.s: src/ThePongGame/Table/windRight.cpp.s
+
+.PHONY : src/ThePongGame/Table/windRight.s
+
+# target to generate assembly for a file
+src/ThePongGame/Table/windRight.cpp.s:
+	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.s
+.PHONY : src/ThePongGame/Table/windRight.cpp.s
+
 src/ThePongGame/Won_Signs/won.o: src/ThePongGame/Won_Signs/won.cpp.o
 
 .PHONY : src/ThePongGame/Won_Signs/won.o
@@ -1112,33 +1166,6 @@ src/ThePongGame/ball.s: src/ThePongGame/ball.cpp.s
 src/ThePongGame/ball.cpp.s:
 	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.s
 .PHONY : src/ThePongGame/ball.cpp.s
-
-src/ThePongGame/childBall.o: src/ThePongGame/childBall.cpp.o
-
-.PHONY : src/ThePongGame/childBall.o
-
-# target to build an object file
-src/ThePongGame/childBall.cpp.o:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o
-.PHONY : src/ThePongGame/childBall.cpp.o
-
-src/ThePongGame/childBall.i: src/ThePongGame/childBall.cpp.i
-
-.PHONY : src/ThePongGame/childBall.i
-
-# target to preprocess a source file
-src/ThePongGame/childBall.cpp.i:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.i
-.PHONY : src/ThePongGame/childBall.cpp.i
-
-src/ThePongGame/childBall.s: src/ThePongGame/childBall.cpp.s
-
-.PHONY : src/ThePongGame/childBall.s
-
-# target to generate assembly for a file
-src/ThePongGame/childBall.cpp.s:
-	$(MAKE) -f CMakeFiles/ThePongGame.dir/build.make CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.s
-.PHONY : src/ThePongGame/childBall.cpp.s
 
 src/ThePongGame/main.o: src/ThePongGame/main.cpp.o
 
@@ -1305,15 +1332,18 @@ help:
 	@echo "... src/ThePongGame/Table/smallWall.o"
 	@echo "... src/ThePongGame/Table/smallWall.i"
 	@echo "... src/ThePongGame/Table/smallWall.s"
+	@echo "... src/ThePongGame/Table/windLeft.o"
+	@echo "... src/ThePongGame/Table/windLeft.i"
+	@echo "... src/ThePongGame/Table/windLeft.s"
+	@echo "... src/ThePongGame/Table/windRight.o"
+	@echo "... src/ThePongGame/Table/windRight.i"
+	@echo "... src/ThePongGame/Table/windRight.s"
 	@echo "... src/ThePongGame/Won_Signs/won.o"
 	@echo "... src/ThePongGame/Won_Signs/won.i"
 	@echo "... src/ThePongGame/Won_Signs/won.s"
 	@echo "... src/ThePongGame/ball.o"
 	@echo "... src/ThePongGame/ball.i"
 	@echo "... src/ThePongGame/ball.s"
-	@echo "... src/ThePongGame/childBall.o"
-	@echo "... src/ThePongGame/childBall.i"
-	@echo "... src/ThePongGame/childBall.s"
 	@echo "... src/ThePongGame/main.o"
 	@echo "... src/ThePongGame/main.i"
 	@echo "... src/ThePongGame/main.s"

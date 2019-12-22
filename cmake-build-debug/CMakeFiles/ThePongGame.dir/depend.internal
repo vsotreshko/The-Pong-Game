@@ -115,8 +115,6 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o
  ../ppgso/window.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/camera.h
- shaders/texture_frag_glsl.h
- shaders/texture_vert_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/object.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/object.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Main Objects/object.h
@@ -254,6 +252,41 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.h
  shaders/diffuse_frag_glsl.h
  shaders/diffuse_vert_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o
+ ../ppgso/image.h
+ ../ppgso/image_bmp.h
+ ../ppgso/image_raw.h
+ ../ppgso/mesh.h
+ ../ppgso/ppgso.h
+ ../ppgso/shader.h
+ ../ppgso/texture.h
+ ../ppgso/tiny_obj_loader.h
+ ../ppgso/window.h
+ ../src/ThePongGame/Main Objects/camera.h
+ ../src/ThePongGame/Main Objects/object.h
+ ../src/ThePongGame/Main Objects/scene.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.cpp
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.h
+ shaders/diffuse_frag_glsl.h
+ shaders/diffuse_vert_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o
+ ../ppgso/image.h
+ ../ppgso/image_bmp.h
+ ../ppgso/image_raw.h
+ ../ppgso/mesh.h
+ ../ppgso/ppgso.h
+ ../ppgso/shader.h
+ ../ppgso/texture.h
+ ../ppgso/tiny_obj_loader.h
+ ../ppgso/window.h
+ ../src/ThePongGame/Main Objects/camera.h
+ ../src/ThePongGame/Main Objects/object.h
+ ../src/ThePongGame/Main Objects/scene.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.h
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.cpp
+ /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.h
+ shaders/diffuse_frag_glsl.h
+ shaders/diffuse_vert_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o
  ../ppgso/image.h
  ../ppgso/image_bmp.h
@@ -273,27 +306,14 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o
  ../src/ThePongGame/Table/border.h
  ../src/ThePongGame/Table/playground.h
  ../src/ThePongGame/Table/smallWall.h
+ ../src/ThePongGame/Table/windLeft.h
+ ../src/ThePongGame/Table/windRight.h
  ../src/ThePongGame/Won Signs/won.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h
  shaders/diffuse_frag_glsl.h
  shaders/diffuse_vert_glsl.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o
- ../ppgso/image.h
- ../ppgso/image_bmp.h
- ../ppgso/image_raw.h
- ../ppgso/mesh.h
- ../ppgso/ppgso.h
- ../ppgso/shader.h
- ../ppgso/texture.h
- ../ppgso/tiny_obj_loader.h
- ../ppgso/window.h
- ../src/ThePongGame/Main Objects/camera.h
- ../src/ThePongGame/Main Objects/object.h
- ../src/ThePongGame/Main Objects/scene.h
- /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp
- /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o
  ../cmake-build-debug/shaders/texture_frag_glsl.h
  ../cmake-build-debug/shaders/texture_vert_glsl.h
@@ -322,6 +342,8 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o
  ../src/ThePongGame/Table/border.h
  ../src/ThePongGame/Table/playground.h
  ../src/ThePongGame/Table/smallWall.h
+ ../src/ThePongGame/Table/windLeft.h
+ ../src/ThePongGame/Table/windRight.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.h
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp
  /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.h

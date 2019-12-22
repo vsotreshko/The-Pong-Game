@@ -114,8 +114,6 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: ../ppgso/t
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: ../ppgso/window.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: ../src/ThePongGame/Main\ Objects/camera.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: ../src/ThePongGame/Main\ Objects/camera.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: shaders/texture_frag_glsl.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/camera.cpp.o: shaders/texture_vert_glsl.h
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/object.cpp.o: ../src/ThePongGame/Main\ Objects/object.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Main_Objects/object.cpp.o: ../src/ThePongGame/Main\ Objects/object.h
@@ -254,6 +252,41 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o: ../src/ThePong
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o: shaders/diffuse_frag_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o: shaders/diffuse_vert_glsl.h
 
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/image.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/image_bmp.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/image_raw.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/mesh.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/ppgso.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/shader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/texture.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/tiny_obj_loader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../ppgso/window.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Main\ Objects/camera.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Main\ Objects/object.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Main\ Objects/scene.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Table/windLeft.cpp
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Table/windLeft.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: shaders/diffuse_frag_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: shaders/diffuse_vert_glsl.h
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/image.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/image_bmp.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/image_raw.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/mesh.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/ppgso.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/shader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/texture.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/tiny_obj_loader.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../ppgso/window.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Main\ Objects/camera.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Main\ Objects/object.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Main\ Objects/scene.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Table/windLeft.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Table/windRight.cpp
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Table/windRight.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: shaders/diffuse_frag_glsl.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: shaders/diffuse_vert_glsl.h
+
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../ppgso/image.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../ppgso/image_bmp.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../ppgso/image_raw.h
@@ -272,27 +305,14 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Score/
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Table/border.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Table/playground.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Table/smallWall.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Table/windLeft.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Table/windRight.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/Won\ Signs/won.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/ball.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: ../src/ThePongGame/player.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: shaders/diffuse_frag_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o: shaders/diffuse_vert_glsl.h
-
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/image.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/image_bmp.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/image_raw.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/mesh.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/ppgso.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/shader.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/texture.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/tiny_obj_loader.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../ppgso/window.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/Main\ Objects/camera.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/Main\ Objects/object.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/Main\ Objects/scene.h
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/childBall.cpp
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/childBall.h
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../cmake-build-debug/shaders/texture_frag_glsl.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../cmake-build-debug/shaders/texture_vert_glsl.h
@@ -321,6 +341,8 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Score/
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Table/border.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Table/playground.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Table/smallWall.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Table/windLeft.h
+CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/Table/windRight.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/ball.h
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/main.cpp
 CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o: ../src/ThePongGame/player.h

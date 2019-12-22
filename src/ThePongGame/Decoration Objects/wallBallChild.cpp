@@ -35,21 +35,13 @@ WallBallChild::WallBallChild() {
 
 bool WallBallChild::update(Scene &scene, float dt) {
 
-    bool ballOnScreen = false;
     for (auto &obj : scene.objects) {
         if (obj.get() == this) continue;
 
         auto Ball = dynamic_cast<WallBall*>(obj.get());
-
         if(!Ball) continue;
 
         this->modelMatrix = Ball->modelMatrix * glm::translate(mat4(1.0f), position) * glm::scale(mat4(1.0f), scale);
-        ballOnScreen = true;
-    }
-
-    //Delete rotating objects if the main object was also deleted
-    if(!ballOnScreen) {
-        return false;
     }
 
     return true;

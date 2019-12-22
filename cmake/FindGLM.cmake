@@ -1,4 +1,4 @@
-# FindGLM - attempts to locate the glm matrix/vector library.
+# FindGLM - attempts to locate the glm matrix/childBalls library.
 #
 # This module defines the following variables (on success):
 #   GLM_INCLUDE_DIRS  - where to find glm/glm.hpp

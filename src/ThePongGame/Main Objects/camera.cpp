@@ -2,9 +2,6 @@
 #include <ppgso/ppgso.h>
 
 #include "camera.h"
-#include <shaders/texture_vert_glsl.h>
-#include <shaders/texture_frag_glsl.h>
-
 using namespace std;
 using namespace glm;
 using namespace ppgso;
@@ -43,7 +40,7 @@ glm::vec3 Camera::cast(float u, float v) {
   auto planePosition = invView * invProjection * screenPosition;
   planePosition /= planePosition.w;
 
-  // Create direction vector
+  // Create direction childBalls
   auto direction = glm::normalize(planePosition - vec4{position,1.0f});
   return vec3{direction};
 }

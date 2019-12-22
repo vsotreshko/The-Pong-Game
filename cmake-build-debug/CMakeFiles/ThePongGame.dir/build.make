@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -265,22 +265,9 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/background.cpp" -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.s
 
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o: ../src/ThePongGame/childBall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp
-
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp > CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.i
-
-CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp -o CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.s
-
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o: ../src/ThePongGame/Decoration\ Objects/wallBall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o -c "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBall.cpp"
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.s: cm
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o: ../src/ThePongGame/Decoration\ Objects/wallBallChild.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o -c "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Decoration Objects/wallBallChild.cpp"
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o: ../src/ThePongGame/Table/smallWall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.cpp
 
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.i: cmake_force
@@ -316,6 +303,32 @@ CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.i: cmake_force
 CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.cpp -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.s
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o: ../src/ThePongGame/Table/windRight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.cpp
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.cpp > CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.i
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.cpp -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.s
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: CMakeFiles/ThePongGame.dir/flags.make
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o: ../src/ThePongGame/Table/windLeft.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o -c /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.cpp
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.cpp > CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.i
+
+CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.cpp -o CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.s
 
 # Object files for target ThePongGame
 ThePongGame_OBJECTS = \
@@ -335,10 +348,11 @@ ThePongGame_OBJECTS = \
 "CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/right_score.cpp.o" \
 "CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/start_screen.cpp.o" \
 "CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.o" \
-"CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o" \
 "CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o" \
 "CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o" \
-"CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o"
+"CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o" \
+"CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o" \
+"CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o"
 
 # External object files for target ThePongGame
 ThePongGame_EXTERNAL_OBJECTS =
@@ -359,10 +373,11 @@ ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/left_score.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Score/right_score.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/start_screen.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/background.cpp.o
-ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBall.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Decoration_Objects/wallBallChild.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o
+ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o
+ThePongGame: CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o
 ThePongGame: CMakeFiles/ThePongGame.dir/build.make
 ThePongGame: libppgso.a
 ThePongGame: libshaders.a
@@ -371,7 +386,7 @@ ThePongGame: /usr/lib/x86_64-linux-gnu/libGLEW.so
 ThePongGame: /usr/lib/x86_64-linux-gnu/libGL.so
 ThePongGame: /usr/lib/x86_64-linux-gnu/libGLU.so
 ThePongGame: CMakeFiles/ThePongGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable ThePongGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable ThePongGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThePongGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

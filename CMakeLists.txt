@@ -127,7 +127,7 @@ add_executable(ThePongGame
         src/ThePongGame/Score/score_signs.h
         src/ThePongGame/Score/score_number.cpp
         src/ThePongGame/Score/score_number.h
-        src/ThePongGame/Score/left_score.cpp src/ThePongGame/Score/left_score.h src/ThePongGame/Score/right_score.cpp src/ThePongGame/Score/right_score.h "src/ThePongGame/Decoration Objects/start_screen.cpp" "src/ThePongGame/Decoration Objects/start_screen.h" "src/ThePongGame/Decoration Objects/background.cpp" "src/ThePongGame/Decoration Objects/background.h" src/ThePongGame/childBall.cpp src/ThePongGame/childBall.h "src/ThePongGame/Decoration Objects/wallBall.cpp" "src/ThePongGame/Decoration Objects/wallBall.h" "src/ThePongGame/Decoration Objects/wallBallChild.cpp" "src/ThePongGame/Decoration Objects/wallBallChild.h" src/ThePongGame/Table/smallWall.cpp src/ThePongGame/Table/smallWall.h)
+        src/ThePongGame/Score/left_score.cpp src/ThePongGame/Score/left_score.h src/ThePongGame/Score/right_score.cpp src/ThePongGame/Score/right_score.h "src/ThePongGame/Decoration Objects/start_screen.cpp" "src/ThePongGame/Decoration Objects/start_screen.h" "src/ThePongGame/Decoration Objects/background.cpp" "src/ThePongGame/Decoration Objects/background.h" "src/ThePongGame/Decoration Objects/wallBall.cpp" "src/ThePongGame/Decoration Objects/wallBall.h" "src/ThePongGame/Decoration Objects/wallBallChild.cpp" "src/ThePongGame/Decoration Objects/wallBallChild.h" src/ThePongGame/Table/smallWall.cpp src/ThePongGame/Table/smallWall.h src/ThePongGame/Table/windRight.cpp src/ThePongGame/Table/windRight.h src/ThePongGame/Table/windLeft.cpp src/ThePongGame/Table/windLeft.h)
 target_link_libraries(ThePongGame ppgso shaders)
 install(TARGETS ThePongGame DESTINATION .)
 

@@ -13,7 +13,7 @@
 
 class WallBall : public Object {
 private:
-    std::vector<std::unique_ptr<WallBallChild>> rotatingBalls;
+    std::vector<std::unique_ptr<WallBallChild>> childBalls;
 
     // Static resources (Shared between instances)
     static std::unique_ptr<ppgso::Mesh> mesh;
@@ -27,22 +27,9 @@ private:
     bool spawned;
     float age;
 
-    glm::vec3 rotMomentum;
-
 public:
     WallBall();
 
-    /*!
-   * Update asteroid
-   * @param scene Scene to interact with
-   * @param dt Time delta for animation purposes
-   * @return
-   */
     bool update(Scene &scene, float dt) override;
-
-    /*!
-     * Render asteroid
-     * @param scene Scene to render in
-     */
     void render(Scene &scene) override;
 };

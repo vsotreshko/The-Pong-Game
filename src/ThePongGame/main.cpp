@@ -33,6 +33,8 @@
 #include <glm/gtc/random.hpp>
 #include <src/ThePongGame/Decoration Objects/wallBall.h>
 #include <src/ThePongGame/Table/smallWall.h>
+#include <src/ThePongGame/Table/windRight.h>
+#include <src/ThePongGame/Table/windLeft.h>
 
 
 using namespace std;
@@ -73,6 +75,10 @@ private:
         scene.objects.push_back(move(start_screen));
     }
 
+    // OpenGL object ids for framebuffer and render buffer
+    GLuint fbo = 0;
+    GLuint rbo = 0;
+
 public:
     bool animate = true;
 
@@ -96,7 +102,19 @@ public:
     void onKey(int key, int scanCode, int action, int mods) override {
         scene.keyboard[key] = action;
 
-        //// Add ball to the Game
+        //// Turn ON Right wind
+        if (key == GLFW_KEY_0 && action == GLFW_PRESS) {
+            auto rightWind = make_unique<WindRight>();
+            scene.objects.push_back(move(rightWind));
+        }
+
+        //// Turn ON Left wind
+        if (key == GLFW_KEY_9 && action == GLFW_PRESS) {
+            auto leftWind = make_unique<WindLeft>();
+            scene.objects.push_back(move(leftWind));
+        }
+
+        //// Reset Game
         if (key == GLFW_KEY_ENTER && action == GLFW_PRESS) {
             initGameScene();
         }

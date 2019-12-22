@@ -24,32 +24,11 @@ private:
     static std::map<std::string, int> material_map;
 
 public:
-
+    Right_score();
     void updateNumber(int number);
 
-    /*!
-     * Create new asteroid
-     */
-    Right_score();
-
-    /*!
-     * Update asteroid
-     * @param scene Scene to interact with
-     * @param dt Time delta for animation purposes
-     * @return
-     */
     bool update(Scene &scene, float dt) override;
-
-    /*!
-     * Render asteroid
-     * @param scene Scene to render in
-     */
     void render(Scene &scene) override;
-
-//    /*!
-//     * Custom click event for asteroid
-//     */
-//    void onClick(Scene &scene) override;
 
 private:
 };

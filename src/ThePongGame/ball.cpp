@@ -5,6 +5,8 @@
 #include <shaders/diffuse_frag_glsl.h>
 #include <src/ThePongGame/Won Signs/won.h>
 #include <src/ThePongGame/Table/smallWall.h>
+#include <src/ThePongGame/Table/windLeft.h>
+#include <src/ThePongGame/Table/windRight.h>
 #include "ball.h"
 #include "player.h"
 #include "src/ThePongGame/Table/border.h"
@@ -53,7 +55,8 @@ Ball::Ball() {
 }
 
 bool Ball::update(Scene &scene, float dt) {
-    speed.z += dt * 3;
+    vec3 gravitation = {0.0f, 0.0f, 0.05f};
+    speed += gravitation;
 
     // Animate position according to time
     position += speed * dt;
@@ -61,6 +64,17 @@ bool Ball::update(Scene &scene, float dt) {
 
     for (auto &obj : scene.objects) {
         if (obj.get() == this) continue;
+
+        auto windLeft = dynamic_cast<WindLeft *>(obj.get());
+        if(windLeft) {
+            this->speed += windLeft->power;
+        }
+
+        auto windRight = dynamic_cast<WindRight *>(obj.get());
+        if(windRight) {
+            this->speed += windRight->power;
+        }
+
         auto player = dynamic_cast<Player *>(obj.get());
         if (player) {
             if (distance(position.x, player->position.x) <= player->scale.x + (scale.x / 2) &&

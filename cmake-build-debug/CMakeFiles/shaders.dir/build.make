@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,56 +59,56 @@ include CMakeFiles/shaders.dir/flags.make
 
 shaders/color_vert_glsl.cpp: ../shader/color_vert.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_vert.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.h -DSYMBOL=color_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_vert_glsl.h -DSYMBOL=color_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/color_vert_glsl.h: shaders/color_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/color_vert_glsl.h
 
 shaders/color_frag_glsl.cpp: ../shader/color_frag.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_frag.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.h -DSYMBOL=color_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/color_frag_glsl.h -DSYMBOL=color_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/color_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/color_frag_glsl.h: shaders/color_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/color_frag_glsl.h
 
 shaders/convolution_vert_glsl.cpp: ../shader/convolution_vert.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_vert.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.h -DSYMBOL=convolution_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_vert_glsl.h -DSYMBOL=convolution_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/convolution_vert_glsl.h: shaders/convolution_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/convolution_vert_glsl.h
 
 shaders/convolution_frag_glsl.cpp: ../shader/convolution_frag.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_frag.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.h -DSYMBOL=convolution_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/convolution_frag_glsl.h -DSYMBOL=convolution_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/convolution_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/convolution_frag_glsl.h: shaders/convolution_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/convolution_frag_glsl.h
 
 shaders/diffuse_vert_glsl.cpp: ../shader/diffuse_vert.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_vert.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.h -DSYMBOL=diffuse_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_vert_glsl.h -DSYMBOL=diffuse_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/diffuse_vert_glsl.h: shaders/diffuse_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/diffuse_vert_glsl.h
 
 shaders/diffuse_frag_glsl.cpp: ../shader/diffuse_frag.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_frag.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.h -DSYMBOL=diffuse_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/diffuse_frag_glsl.h -DSYMBOL=diffuse_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/diffuse_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/diffuse_frag_glsl.h: shaders/diffuse_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/diffuse_frag_glsl.h
 
 shaders/texture_vert_glsl.cpp: ../shader/texture_vert.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_vert.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.h -DSYMBOL=texture_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_vert_glsl.h -DSYMBOL=texture_vert_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_vert.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/texture_vert_glsl.h: shaders/texture_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/texture_vert_glsl.h
 
 shaders/texture_frag_glsl.cpp: ../shader/texture_frag.glsl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating resource from /home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_frag.glsl"
-	/snap/clion/98/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.h -DSYMBOL=texture_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
+	/snap/clion/99/bin/cmake/linux/bin/cmake -DOUTPUT_C=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.cpp -DOUTPUT_H=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/shaders/texture_frag_glsl.h -DSYMBOL=texture_frag_glsl -DINPUT_FILE=/home/vsotreshko/Documents/5.Semester/The-Pong-Game/shader/texture_frag.glsl -P /home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake/bin2c.cmake
 
 shaders/texture_frag_glsl.h: shaders/texture_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/texture_frag_glsl.h

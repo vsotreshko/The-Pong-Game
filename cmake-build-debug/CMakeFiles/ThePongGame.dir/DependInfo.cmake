@@ -20,8 +20,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/border.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/border.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/playground.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/playground.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/smallWall.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/smallWall.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windLeft.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windLeft.cpp.o"
+  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/Table/windRight.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/Table/windRight.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/ball.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/ball.cpp.o"
-  "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/childBall.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/childBall.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/main.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/main.cpp.o"
   "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/src/ThePongGame/player.cpp" "/home/vsotreshko/Documents/5.Semester/The-Pong-Game/cmake-build-debug/CMakeFiles/ThePongGame.dir/src/ThePongGame/player.cpp.o"
   )

@@ -1,7 +1,7 @@
-/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vsotreshko/Documents/5.Semester/The-Pong-Game
+/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vsotreshko/Documents/5.Semester/The-Pong-Game
 -- Found GLFW3: /usr/lib/x86_64-linux-gnu/libglfw.so
 -- GLM_INCLUDE_DIR = /usr/include
-CMake Warning (dev) at /snap/clion/98/bin/cmake/linux/share/cmake-3.15/Modules/FindOpenGL.cmake:275 (message):
+CMake Warning (dev) at /snap/clion/99/bin/cmake/linux/share/cmake-3.15/Modules/FindOpenGL.cmake:275 (message):
   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
   cmake_policy command to set the policy and suppress this warning.

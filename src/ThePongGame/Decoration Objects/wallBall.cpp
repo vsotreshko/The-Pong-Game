@@ -45,22 +45,22 @@ WallBall::WallBall() {
     auto childBall6 = make_unique<WallBallChild>();
 
     childBall1->position = {0, 0, 1};
-    this->rotatingBalls.push_back(move(childBall1));
+    this->childBalls.push_back(move(childBall1));
 
     childBall2->position = {0, 0, -1};
-    this->rotatingBalls.push_back(move(childBall2));
+    this->childBalls.push_back(move(childBall2));
 
     childBall3->position = {0, 1, 0};
-    this->rotatingBalls.push_back(move(childBall3));
+    this->childBalls.push_back(move(childBall3));
 
     childBall4->position = {0, -1, 0};
-    this->rotatingBalls.push_back(move(childBall4));
+    this->childBalls.push_back(move(childBall4));
 
     childBall5->position = {1, 0, 0};
-    this->rotatingBalls.push_back(move(childBall5));
+    this->childBalls.push_back(move(childBall5));
 
     childBall6->position = {-1, 0, 0};
-    this->rotatingBalls.push_back(move(childBall6));
+    this->childBalls.push_back(move(childBall6));
 
 
     addKeyFrame(400, {0, 0, rotation.z}, this->scale, {3, this->position.y, this->position.z});
@@ -68,15 +68,12 @@ WallBall::WallBall() {
 }
 
 bool WallBall::update(Scene &scene, float dt) {
-
     age += dt;
-
-//    rotation += rotMomentum * dt;
 
     if(!spawned) {
         this->spawned = true;
 
-        for (auto& obj : this->rotatingBalls) {
+        for (auto& obj : this->childBalls) {
             scene.objects.push_back(move(obj));
         }
     }
